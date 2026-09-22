@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Red Camel Desert Safari | Direct DET-Licensed Operator Dubai</title>
+  <meta name="description" content="Experience Dubai's top-rated desert safaris directly from DET-licensed operator since 2010. Red dune bashing, 5-star BBQ dinner, quad biking & VIP luxury packages. Free hotel pickup & pay on arrival.">
+  <meta name="keywords" content="Dubai desert safari, dune bashing, evening desert safari, quad bike Dubai, VIP desert safari, dune buggy Dubai, Red Camel Desert Safari">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🐪</text></svg>">
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       HEADER / STICKY NAVIGATION
+       ========================================================================== -->
+  <header class="header">
+    <div class="container header-inner">
+      <a href="#" class="logo">
+        <div class="logo-badge-icon">🐪</div>
+        <div class="logo-text">
+          <span class="logo-title">RED CAMEL</span>
+          <span class="logo-sub">DESERT SAFARI DUBAI</span>
+        </div>
+      </a>
+
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#packages" class="nav-link">Safari Packages</a></li>
+        <li><a href="#compare" class="nav-link">Compare Tiers</a></li>
+        <li><a href="#itinerary" class="nav-link">Itinerary</a></li>
+        <li><a href="#why-us" class="nav-link">Why Book Direct</a></li>
+        <li><a href="#gallery" class="nav-link">Gallery</a></li>
+        <li><a href="#reviews" class="nav-link">Reviews</a></li>
+        <li><a href="#faq" class="nav-link">FAQ</a></li>
+      </ul>
+
+      <div class="header-controls">
+        <!-- Currency Converter -->
+        <div class="currency-selector">
+          <button class="currency-btn" id="currencyBtn" aria-label="Select Currency">
+            <span>🌐</span>
+            <span class="curr-code">AED</span>
+            <small>▼</small>
+          </button>
+          <div class="currency-dropdown" id="currencyDropdown">
+            <button class="currency-opt selected" data-curr="AED"><span>AED</span> <span>Dirham</span></button>
+            <button class="currency-opt" data-curr="USD"><span>USD</span> <span>Dollar</span></button>
+            <button class="currency-opt" data-curr="EUR"><span>EUR</span> <span>Euro</span></button>
+            <button class="currency-opt" data-curr="GBP"><span>GBP</span> <span>Pound</span></button>
+            <button class="currency-opt" data-curr="SAR"><span>SAR</span> <span>Riyal</span></button>
+            <button class="currency-opt" data-curr="INR"><span>INR</span> <span>Rupee</span></button>
+          </div>
+        </div>
+
+        <button class="btn btn-primary header-book-btn" onclick="openBookingDrawer('evening-premium')">
+          <span>Book Safari</span>
+          <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M3 8h10M9 4l4 4-4 4"/>
+          </svg>
+        </button>
+
+        <button class="burger-btn" id="burgerBtn" aria-label="Toggle Mobile Menu">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <path d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       HERO SECTION
+       ========================================================================== -->
+  <section class="hero" id="home">
+    <div class="hero-bg-wrapper">
+      <img src="assets/images/hero_desert.jpg" alt="Dubai Red Dune Bashing Toyota Land Cruiser Safari" class="hero-bg-img">
+    </div>
+    <div class="hero-overlay"></div>
+
+    <div class="container hero-content">
+      <div class="hero-badge">
+        <span class="hero-badge-dot"></span>
+        <span>DET-Licensed Direct Operator • Since 2010</span>
+      </div>
+
+      <h1 class="hero-title">
+        Experience Dubai’s Ultimate Desert Safari <span class="gradient-text-gold">Redefined.</span>
+      </h1>
+
+      <p class="hero-subtitle">
+        Thrilling Lahbab red dune bashing in 4x4 Land Cruisers, authentic 5-star Bedouin BBQ feast under starry skies, live Arabian shows & sandboarding. Zero reseller markups, free hotel pickup, pay on arrival.
+      </p>
+
+      <div class="hero-cta-group">
+        <button class="btn btn-primary" onclick="openBookingDrawer('evening-premium')">
+          <span>Reserve Premium Safari • <strong id="heroPriceBtn" data-price="129">AED 129</strong></span>
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M3 8h10M9 4l4 4-4 4"/>
+          </svg>
+        </button>
+        <button class="btn btn-whatsapp" onclick="submitBookingToWhatsapp()">
+          <span>💬 Instant WhatsApp Reservation</span>
+        </button>
+      </div>
+
+      <div class="hero-perks">
+        <div class="perk-item">
+          <svg class="perk-icon" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+          <span>Free 4x4 SUV Hotel Pickup</span>
+        </div>
+        <div class="perk-item">
+          <svg class="perk-icon" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+          <span>Pay Cash / Card on Arrival</span>
+        </div>
+        <div class="perk-item">
+          <svg class="perk-icon" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+          <span>100% Free 24h Cancellation</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       TRUST METRICS BAR
+       ========================================================================== -->
+  <section class="trust-bar">
+    <div class="container trust-grid">
+      <div class="trust-card">
+        <div class="trust-icon-box">👥</div>
+        <div>
+          <div class="trust-val">25,000+</div>
+          <div class="trust-lbl">Guests Hosted</div>
+        </div>
+      </div>
+      <div class="trust-card">
+        <div class="trust-icon-box">⭐</div>
+        <div>
+          <div class="trust-val">4.9 / 5.0</div>
+          <div class="trust-lbl">Google Verified (420+ Reviews)</div>
+        </div>
+      </div>
+      <div class="trust-card">
+        <div class="trust-icon-box">🏆</div>
+        <div>
+          <div class="trust-val">15+ Years</div>
+          <div class="trust-lbl">Direct Licensed Operator</div>
+        </div>
+      </div>
+      <div class="trust-card">
+        <div class="trust-icon-box">🛡️</div>
+        <div>
+          <div class="trust-val">DET Licensed</div>
+          <div class="trust-lbl">License #1274693</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SAFARI PACKAGES EXPLORER
+       ========================================================================== -->
+  <section class="section" id="packages">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow">CHOOSE YOUR ADVENTURE</span>
+        <h2 class="section-title">Dubai Desert Safari Packages</h2>
+        <p class="section-desc">Transparent pricing straight from the direct operator. Select your preferred tier and experience.</p>
+      </div>
+
+      <!-- Category Filter Tabs -->
+      <div class="filter-tabs">
+        <button class="tab-btn active" data-category="all">All Packages</button>
+        <button class="tab-btn" data-category="evening">Evening Safaris</button>
+        <button class="tab-btn" data-category="vip">VIP Luxury</button>
+        <button class="tab-btn" data-category="short">Short Tours</button>
+        <button class="tab-btn" data-category="morning">Morning & Sunrise</button>
+        <button class="tab-btn" data-category="combos">Quad Combos</button>
+        <button class="tab-btn" data-category="selfdrive">Self-Drive</button>
+      </div>
+
+      <!-- Packages Grid -->
+      <div class="packages-grid" id="packagesGrid"></div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       TIER COMPARISON MATRIX
+       ========================================================================== -->
+  <section class="section" id="compare">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow">TRANSPARENT TIER COMPARISON</span>
+        <h2 class="section-title">Evening Safari Tier Comparison</h2>
+        <p class="section-desc">Same red dunes, same certified safety. Pick the tier that matches your comfort, dining, and VIP preferences.</p>
+      </div>
+
+      <div class="comparison-container">
+        <table class="comparison-table">
+          <thead>
+            <tr>
+              <th>Feature / Inclusion</th>
+              <th>Standard Pass (AED 79)</th>
+              <th class="highlight">Premium Tier (AED 129) ★</th>
+              <th>VIP Luxury (AED 299)</th>
+              <th>Private Heritage (AED 999)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Hotel Pick-up & Drop-off</td>
+              <td>Sharing 4x4 SUV</td>
+              <td class="highlight">Sharing 4x4 SUV</td>
+              <td>VIP Shared / Private 4x4</td>
+              <td>Private Vintage/Luxury 4x4</td>
+            </tr>
+            <tr>
+              <td>Red Dune Bashing Route</td>
+              <td>15–20 Mins Standard</td>
+              <td class="highlight">25–30 Mins High Red Dunes</td>
+              <td>35+ Mins Extended Desert</td>
+              <td>Private Dune Route</td>
+            </tr>
+            <tr>
+              <td>Camp Seating Arrangement</td>
+              <td>Carpet / Low Cushion</td>
+              <td class="highlight">Priority Majlis Cushion</td>
+              <td>Reserved VIP Table & Service</td>
+              <td>Exclusive Private Pavilion</td>
+            </tr>
+            <tr>
+              <td>BBQ Buffet Dinner</td>
+              <td>Standard BBQ (Veg/Non-Veg)</td>
+              <td class="highlight">Premium Live Grill & Buffet</td>
+              <td>Gourmet Live Grill & Seafood</td>
+              <td>7-Course Royal Arabian Feast</td>
+            </tr>
+            <tr>
+              <td>Live Arabian Shows</td>
+              <td>Tanoura & Belly Dance</td>
+              <td class="highlight">Full 3 Shows (Tanoura, Belly, Fire)</td>
+              <td>3 Shows (Front Row Priority)</td>
+              <td>Private Dancers & Falconry</td>
+            </tr>
+            <tr>
+              <td>Falcon Photo & Costume</td>
+              <td>Extra Charge</td>
+              <td class="highlight">Extra Charge</td>
+              <td><span class="check-icon">✓ Included</span></td>
+              <td><span class="check-icon">✓ Included</span></td>
+            </tr>
+            <tr>
+              <td>Unlimited Soft Drinks & Coffee</td>
+              <td><span class="check-icon">✓ Included</span></td>
+              <td class="highlight"><span class="check-icon">✓ Included</span></td>
+              <td><span class="check-icon">✓ Included</span></td>
+              <td><span class="check-icon">✓ Included</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       TOUR ITINERARY TIMELINE
+       ========================================================================== -->
+  <section class="section" id="itinerary">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow">WHAT TO EXPECT ON THE DAY</span>
+        <h2 class="section-title">Tour Program & Itinerary</h2>
+        <p class="section-desc">A typical evening safari sequence designed for maximum comfort, thrill, and memorable moments.</p>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-node">1</div>
+          <div class="timeline-content">
+            <div>
+              <div class="timeline-time">03:00 PM – 03:30 PM</div>
+              <h3 class="timeline-title">4x4 SUV Hotel Pickup</h3>
+              <p class="timeline-desc">Your licensed safari driver arrives at your hotel reception in a clean, climate-controlled Toyota Land Cruiser 4x4. Enjoy a comfortable ride to the Lahbab Red Dunes.</p>
+            </div>
+            <div class="timeline-img-wrap">
+              <img src="https://images.unsplash.com/photo-1547234935-80c7145ec969?auto=format&fit=crop&w=400&q=80" alt="4x4 SUV Pickup" class="timeline-img" loading="lazy">
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-node">2</div>
+          <div class="timeline-content">
+            <div>
+              <div class="timeline-time">04:15 PM – 05:00 PM</div>
+              <h3 class="timeline-title">Red Dune Bashing & Sandboarding</h3>
+              <p class="timeline-desc">Tires deflated, seatbelts on! Experience thrilling 4x4 dune bashing across steep red dunes, followed by sandboarding down high sand slopes.</p>
+            </div>
+            <div class="timeline-img-wrap">
+              <img src="assets/images/hero_desert.jpg" alt="Dune Bashing" class="timeline-img" loading="lazy">
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-node">3</div>
+          <div class="timeline-content">
+            <div>
+              <div class="timeline-time">05:15 PM – 05:45 PM</div>
+              <h3 class="timeline-title">Golden Hour Sunset Photography</h3>
+              <p class="timeline-desc">Stop at a high dune peak for panoramic 360-degree desert sunset views. Perfect lighting for family, couple, and portrait photos.</p>
+            </div>
+            <div class="timeline-img-wrap">
+              <img src="https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&fit=crop&w=400&q=80" alt="Sunset Photography" class="timeline-img" loading="lazy">
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-node">4</div>
+          <div class="timeline-content">
+            <div>
+              <div class="timeline-time">06:00 PM – 07:30 PM</div>
+              <h3 class="timeline-title">Bedouin Camp Arrival & Arabian Hospitality</h3>
+              <p class="timeline-desc">Warm Arabic coffee, dates & drinks upon arrival. Enjoy camel rides, traditional henna tattoo painting, and shisha lounge relaxation.</p>
+            </div>
+            <div class="timeline-img-wrap">
+              <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=400&q=80" alt="Bedouin Camp Welcome" class="timeline-img" loading="lazy">
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-node">5</div>
+          <div class="timeline-content">
+            <div>
+              <div class="timeline-time">07:30 PM – 09:00 PM</div>
+              <h3 class="timeline-title">5-Star BBQ Feast & Live Shows</h3>
+              <p class="timeline-desc">Savor an elaborate BBQ buffet featuring grilled kebabs, chicken tikka, vegetarian specialties, and Arabic sweets alongside Tanoura, Fire, and Belly Dance shows.</p>
+            </div>
+            <div class="timeline-img-wrap">
+              <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=400&q=80" alt="BBQ Feast and Live Shows" class="timeline-img" loading="lazy">
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-node">6</div>
+          <div class="timeline-content">
+            <div>
+              <div class="timeline-time">09:30 PM – 10:00 PM</div>
+              <h3 class="timeline-title">Return Drop-Off to Your Hotel</h3>
+              <p class="timeline-desc">Relax in comfort as your safari driver returns you directly to your hotel or apartment doorstep in Dubai.</p>
+            </div>
+            <div class="timeline-img-wrap">
+              <img src="https://images.unsplash.com/photo-1518684079-3c830dcef090?auto=format&fit=crop&w=400&q=80" alt="Hotel Drop-off" class="timeline-img" loading="lazy">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       WHY BOOK DIRECT
+       ========================================================================== -->
+  <section class="section" id="why-us">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow">DIRECT OPERATOR ADVANTAGE</span>
+        <h2 class="section-title">Why Book Direct with Red Camel</h2>
+        <p class="section-desc">We operate our own fleet of 4x4 Land Cruisers, Bedouin camp, and licensed guides—eliminating reseller markups.</p>
+      </div>
+
+      <div class="why-grid">
+        <div class="why-card">
+          <div class="why-icon">💰</div>
+          <h3 class="why-title">No Reseller Commissions</h3>
+          <p class="why-desc">Online travel portals add 25-40% middleman fees. Booking directly with Red Camel guarantees the lowest authentic price.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon">🚘</div>
+          <h3 class="why-title">In-House Fleet & Guides</h3>
+          <p class="why-desc">Our Land Cruisers are maintained in-house with certified safety-trained desert safari drivers.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon">💳</div>
+          <h3 class="why-title">Pay on Arrival</h3>
+          <p class="why-desc">Zero advance card deposit required. Reserve online and pay in cash or card when your driver picks you up.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon">📱</div>
+          <h3 class="why-title">24/7 WhatsApp Operations</h3>
+          <p class="why-desc">Direct human support before and during your tour. Flight delayed or address changed? Chat with our team anytime.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       PHOTO GALLERY
+       ========================================================================== -->
+  <section class="section" id="gallery">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow">REAL MOMENTS</span>
+        <h2 class="section-title">Experience the Dubai Desert</h2>
+        <p class="section-desc">Authentic un-filtered photos from our evening, morning, and VIP desert safaris.</p>
+      </div>
+
+      <div class="gallery-grid">
+        <div class="gallery-item" onclick="openLightbox('assets/images/hero_desert.jpg', 'Red Dune Bashing in Toyota Land Cruiser 4x4')">
+          <img src="assets/images/hero_desert.jpg" alt="Dune Bashing" class="gallery-img" loading="lazy">
+          <div class="gallery-caption">
+            <div class="gallery-title">Red Dune Bashing</div>
+            <div class="gallery-sub">Lahbab Red Dunes, Dubai</div>
+          </div>
+        </div>
+
+        <div class="gallery-item" onclick="openLightbox('https://images.unsplash.com/photo-1547234935-80c7145ec969?auto=format&fit=crop&w=800&q=80', 'Luxury Bedouin Desert Camp under Night Stars')">
+          <img src="https://images.unsplash.com/photo-1547234935-80c7145ec969?auto=format&fit=crop&w=800&q=80" alt="VIP Camp" class="gallery-img" loading="lazy">
+          <div class="gallery-caption">
+            <div class="gallery-title">Bedouin Camp at Night</div>
+            <div class="gallery-sub">Under Arabian Stars</div>
+          </div>
+        </div>
+
+        <div class="gallery-item" onclick="openLightbox('https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=800&q=80', 'High Performance Quad Biking & Dune Buggy Adventure')">
+          <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=800&q=80" alt="Quad Biking" class="gallery-img" loading="lazy">
+          <div class="gallery-caption">
+            <div class="gallery-title">Quad & Buggy Safari</div>
+            <div class="gallery-sub">350cc & 1000cc Can-Am</div>
+          </div>
+        </div>
+
+        <div class="gallery-item" onclick="openLightbox('https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&fit=crop&w=800&q=80', 'Camel Riding & Golden Hour Sunset View')">
+          <img src="https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&fit=crop&w=800&q=80" alt="Camel Sunset" class="gallery-img" loading="lazy">
+          <div class="gallery-caption">
+            <div class="gallery-title">Camel & Sunset View</div>
+            <div class="gallery-sub">Golden Hour Dunes</div>
+          </div>
+        </div>
+
+        <div class="gallery-item" onclick="openLightbox('https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=800&q=80', 'Tanoura Dance, Fire Show & BBQ Feast')">
+          <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=800&q=80" alt="Live Shows" class="gallery-img" loading="lazy">
+          <div class="gallery-caption">
+            <div class="gallery-title">Live Stage Entertainment</div>
+            <div class="gallery-sub">Tanoura & Fire Show</div>
+          </div>
+        </div>
+
+        <div class="gallery-item" onclick="openLightbox('https://images.unsplash.com/photo-1518684079-3c830dcef090?auto=format&fit=crop&w=800&q=80', 'Sandboarding thrills on high red dune slopes')">
+          <img src="https://images.unsplash.com/photo-1518684079-3c830dcef090?auto=format&fit=crop&w=800&q=80" alt="Sandboarding" class="gallery-img" loading="lazy">
+          <div class="gallery-caption">
+            <div class="gallery-title">Sandboarding Action</div>
+            <div class="gallery-sub">Red Dune Surfing</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       VERIFIED GUEST REVIEWS
+       ========================================================================== -->
+  <section class="section" id="reviews">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow">VERIFIED REVIEWS</span>
+        <h2 class="section-title">Loved by Travelers Worldwide</h2>
+        <p class="section-desc">Over 25,000 satisfied safari guests with a 4.9★ rating on Google Reviews.</p>
+      </div>
+
+      <div class="reviews-grid">
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"The Evening Premium Safari was the highlight of our Dubai trip! Picked up right from Marina. Dune bashing was exhilarating yet felt super safe. BBQ feast and fire show were outstanding!"</p>
+          <div class="review-author">
+            <div class="review-avatar">SM</div>
+            <div class="author-info">
+              <span class="author-name">Sarah & Mark</span>
+              <span class="author-meta">London, UK • Verified Guest</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"We booked the VIP Package for our wedding anniversary. Private table service made us feel like royalty. The Tanoura dancer and seafood grill upgrade were incredible!"</p>
+          <div class="review-author">
+            <div class="review-avatar">JD</div>
+            <div class="author-info">
+              <span class="author-name">James D.</span>
+              <span class="author-meta">New York, USA • Verified Guest</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"Hassle-free booking with zero advance payment. Paid cash directly to driver upon pickup. Quad biking was intense fun. Excellent assistance on WhatsApp from Ahmed!"</p>
+          <div class="review-author">
+            <div class="review-avatar">AR</div>
+            <div class="author-info">
+              <span class="author-name">Amit & Ritu</span>
+              <span class="author-meta">Mumbai, India • Verified Guest</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       FAQ ACCORDION & SEARCH
+       ========================================================================== -->
+  <section class="section" id="faq">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow">GOT QUESTIONS?</span>
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <p class="section-desc">Everything you need to know before your Dubai desert adventure.</p>
+      </div>
+
+      <div class="faq-search-wrap">
+        <input type="text" class="faq-input" id="faqSearch" placeholder="Search questions (e.g. pickup, dress code, kids, vegetarian)...">
+      </div>
+
+      <div class="faq-list">
+        <div class="faq-item active">
+          <button class="faq-question">
+            <span>What is included in the Evening Premium Desert Safari?</span>
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M19 9l-7 7-7-7"/>
+            </svg>
+          </button>
+          <div class="faq-answer">
+            <p>The Premium package covers free door-to-door hotel pickup/drop-off in a Toyota Land Cruiser 4x4, 25-30 mins dune bashing in Lahbab red dunes, sandboarding, sunset photos, camel riding, priority majlis seating, full 5-star BBQ buffet dinner (veg & non-veg options), unlimited soft drinks, tea/coffee, henna design, and all 3 live entertainment shows (Tanoura, Belly dance, Fire show).</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Is hotel pickup included from anywhere in Dubai?</span>
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M19 9l-7 7-7-7"/>
+            </svg>
+          </button>
+          <div class="faq-answer">
+            <p>Yes! Free door-to-door pickup and drop-off is included from any hotel, apartment, or residential building in Dubai and selected areas of Sharjah. For Abu Dhabi or Ras Al Khaimah pickups, a custom private transport surcharge applies.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>What is your cancellation & payment policy?</span>
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M19 9l-7 7-7-7"/>
+            </svg>
+          </button>
+          <div class="faq-answer">
+            <p>We offer 100% Free Cancellation up to 24 hours prior to pickup. You do not need to pay anything in advance to secure your booking. You pay on the date of your tour directly to your driver in cash (AED, USD, EUR) or by credit card.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Are vegetarian and Halal options available at the BBQ dinner?</span>
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M19 9l-7 7-7-7"/>
+            </svg>
+          </button>
+          <div class="faq-answer">
+            <p>Yes. All meats served are 100% Halal certified. The buffet features separate vegetarian and non-vegetarian sections, including grilled chicken, lamb kebabs, falafel, hummus, biryani rice, fresh salads, and Arabic desserts. Vegan options are also available.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>What should I wear for a desert safari?</span>
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M19 9l-7 7-7-7"/>
+            </svg>
+          </button>
+          <div class="faq-answer">
+            <p>We recommend lightweight, comfortable cotton clothing and sneakers or sandals. Sunglasses and a sun hat are useful during golden hour. From November to March, desert evenings can get cool, so bringing a light jacket or cardigan is recommended.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       BOOKING MODAL / DRAWER
+       ========================================================================== -->
+  <div class="modal-overlay" id="bookingModal" onclick="closeBookingDrawer()">
+    <div class="booking-drawer" id="bookingDrawer" onclick="event.stopPropagation()">
+      <div class="drawer-header">
+        <h3 class="drawer-title">Reserve Desert Safari</h3>
+        <button class="close-btn" onclick="closeBookingDrawer()" aria-label="Close Drawer">✕</button>
+      </div>
+
+      <div class="drawer-body">
+        <form id="bookingForm" onsubmit="submitBookingToWhatsapp(event)">
+          <div class="form-group">
+            <label class="form-label">Select Package</label>
+            <select class="form-control" id="bookPackageSelect">
+              <option value="evening-premium">Evening Premium Safari (AED 129)</option>
+              <option value="evening-vip">Evening VIP Luxury Safari (AED 299)</option>
+              <option value="evening-standard">Evening Standard Safari (AED 79)</option>
+              <option value="combo-quad-safari">Quad Bike + Evening Safari Combo (AED 299)</option>
+              <option value="evening-short-private">Evening Short Safari - Private (AED 479)</option>
+              <option value="morning-short-private">Morning Short Safari - Private (AED 449)</option>
+              <option value="vip-traditional-arabic">VIP Traditional Arabic - Private (AED 999)</option>
+              <option value="private-camp-setup">Private Desert Camp Setup (AED 2,599)</option>
+              <option value="sunrise-safari">Sunrise Private Safari (AED 419)</option>
+              <option value="selfdrive-standard">Self-Drive Standard Pass (AED 35)</option>
+              <option value="selfdrive-premium">Self-Drive Premium Pass (AED 59)</option>
+              <option value="selfdrive-vip">Self-Drive VIP Pass (AED 75)</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Safari Date</label>
+            <input type="date" class="form-control" id="bookDate" required>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Number of Guests</label>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px;">
+              <div class="counter-wrap">
+                <span>Adults</span>
+                <div style="display: flex; align-items: center; gap: 10px;">
+                  <button type="button" class="counter-btn" onclick="updateCounter('adult', -1)">-</button>
+                  <span id="adultCountEl" style="font-weight: 800; font-size: 1rem;">2</span>
+                  <button type="button" class="counter-btn" onclick="updateCounter('adult', 1)">+</button>
+                </div>
+              </div>
+              <div class="counter-wrap">
+                <span>Kids (3-11y, 25% Off)</span>
+                <div style="display: flex; align-items: center; gap: 10px;">
+                  <button type="button" class="counter-btn" onclick="updateCounter('child', -1)">-</button>
+                  <span id="childCountEl" style="font-weight: 800; font-size: 1rem;">0</span>
+                  <button type="button" class="counter-btn" onclick="updateCounter('child', 1)">+</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Transport Choice</label>
+            <select class="form-control" id="transportSelect">
+              <option value="sharing">Sharing 4x4 SUV (Included Free)</option>
+              <option value="private">Private 4x4 Land Cruiser (+400 AED Flat)</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Add-on Quad Bike Ride</label>
+            <select class="form-control" id="quadSelect">
+              <option value="none">No Quad Bike</option>
+              <option value="30m">30 Min Quad Bike (+150 AED / pax)</option>
+              <option value="60m">60 Min Quad Bike (+250 AED / pax)</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Lead Guest Name</label>
+            <input type="text" class="form-control" id="bookName" placeholder="e.g. John Smith" required>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Hotel / Pick-Up Location</label>
+            <input type="text" class="form-control" id="bookHotel" placeholder="e.g. Atlantis The Palm / Address Downtown" required>
+          </div>
+
+          <!-- Real-Time Price Breakdown -->
+          <div class="price-breakdown">
+            <div class="breakdown-row">
+              <span>Adults Subtotal</span>
+              <span id="subtotalAdults">2 × AED 129</span>
+            </div>
+            <div class="breakdown-row">
+              <span>Children Subtotal</span>
+              <span id="subtotalChildren">0 × AED 97</span>
+            </div>
+            <div class="breakdown-row">
+              <span>Transport</span>
+              <span id="subtotalTransport">Free Included</span>
+            </div>
+            <div class="breakdown-total">
+              <span>Payable on Arrival</span>
+              <span id="grandTotalEl" style="color: var(--gold-primary);">AED 258</span>
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-whatsapp" style="width: 100%; margin-top: 18px;">
+            <span>💬 Send Reservation via WhatsApp</span>
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       PACKAGE DETAILS MODAL
+       ========================================================================== -->
+  <div class="modal-overlay" id="packageDetailModal" onclick="closePackageModal()">
+    <div style="background: var(--bg-surface); border: 1px solid var(--border-gold); border-radius: var(--radius-lg); padding: 30px; max-width: 600px; width: 90%; max-height: 90vh; overflow-y: auto;" onclick="event.stopPropagation()">
+      <div id="packageModalContent"></div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       LIGHTBOX MODAL
+       ========================================================================== -->
+  <div class="modal-overlay" id="lightboxModal" onclick="closeLightbox()">
+    <div style="position: relative; text-align: center;" onclick="event.stopPropagation()">
+      <img id="lightboxImg" src="" alt="Gallery Image" class="lightbox-img">
+      <div id="lightboxCaption" style="margin-top: 14px; font-weight: 700; color: #FFF; font-size: 1.1rem;"></div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       FLOATING WHATSAPP BUTTON
+       ========================================================================== -->
+  <a href="https://wa.me/971544508581" target="_blank" rel="noopener" class="floating-wa" aria-label="Contact Red Camel Safari on WhatsApp">
+    💬
+  </a>
+
+  <!-- ==========================================================================
+       FOOTER
+       ========================================================================== -->
+  <footer class="footer" id="contact">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="#" class="logo" style="margin-bottom: 18px;">
+            <div class="logo-badge-icon">🐪</div>
+            <div class="logo-text">
+              <span class="logo-title">RED CAMEL</span>
+              <span class="logo-sub">DESERT SAFARI DUBAI</span>
+            </div>
+          </a>
+          <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.6; max-width: 340px;">
+            DET-licensed direct desert safari operator in Dubai since 2010. Authentic Bedouin hospitality, Lehbab red dune bashing, VIP luxury setups, and 0 reseller commissions.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Safaris & Tiers</h4>
+          <ul class="footer-links">
+            <li><a href="#packages" class="footer-link">Evening Premium Safari</a></li>
+            <li><a href="#packages" class="footer-link">Evening VIP Luxury Safari</a></li>
+            <li><a href="#packages" class="footer-link">Standard Desert Safari</a></li>
+            <li><a href="#packages" class="footer-link">Quad Bike & Buggy Combos</a></li>
+            <li><a href="#packages" class="footer-link">Private Camp Setup</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="#compare" class="footer-link">Compare Tier Features</a></li>
+            <li><a href="#itinerary" class="footer-link">Tour Itinerary</a></li>
+            <li><a href="#why-us" class="footer-link">Direct Operator Advantage</a></li>
+            <li><a href="#gallery" class="footer-link">Photo Gallery</a></li>
+            <li><a href="#faq" class="footer-link">Frequently Asked Questions</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Contact & License</h4>
+          <ul class="footer-links">
+            <li style="color: var(--text-secondary); font-size: 0.88rem;">📍 Office 4E-33, Business Bay, Dubai, UAE</li>
+            <li style="color: var(--text-secondary); font-size: 0.88rem;">📞 Phone: +971 54 450 8581</li>
+            <li style="color: var(--text-secondary); font-size: 0.88rem;">✉️ Email: info@redcameldesertsafari.com</li>
+            <li style="color: var(--gold-light); font-size: 0.85rem; font-weight: 700; margin-top: 8px;">DET License No: 1274693</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 Red Camel Desert Safari Dubai. All Rights Reserved.</div>
+        <div style="display: flex; gap: 16px;">
+          <span>💵 Cash Accepted</span>
+          <span>💳 Visa / MasterCard</span>
+          <span>🔒 Secure Booking</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
