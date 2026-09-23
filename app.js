@@ -26,188 +26,9 @@ function formatPrice(aedPrice) {
 }
 
 // --------------------------------------------------------------------------
-// 2. PACKAGES DATASET
+// 2. PACKAGES DATASET (Sorted Ascending by Price)
 // --------------------------------------------------------------------------
 const PACKAGES = [
-  {
-    id: 'evening-premium',
-    title: 'Evening Premium Desert Safari',
-    category: 'evening',
-    badge: '★ Best Seller',
-    featured: true,
-    priceAED: 129,
-    img: 'assets/images/hero_desert.jpg',
-    subtitle: 'Full 6-Hour Lahbab Red Dune Experience & BBQ',
-    duration: '6 Hours (3:00 PM - 9:30 PM)',
-    pickup: 'Free 4x4 SUV Hotel Pickup & Drop',
-    inclusions: [
-      '25–30 Mins Lehbab Red Dune Bashing (4x4 Land Cruiser)',
-      'Sandboarding from high dune crests',
-      'Golden hour sunset photo stop',
-      'Bedouin camp welcome with Arabic coffee & dates',
-      'Camel riding & traditional Henna tattoo painting',
-      '5-Star Live BBQ Buffet (Veg & Non-Veg options)',
-      '3 Live Shows: Tanoura, Fire Performance & Belly Dance',
-      'Unlimited soft drinks, mineral water, tea & coffee'
-    ]
-  },
-  {
-    id: 'evening-vip',
-    title: 'Evening VIP Luxury Desert Safari',
-    category: 'vip',
-    badge: '👑 VIP Experience',
-    featured: false,
-    priceAED: 299,
-    img: 'assets/images/pkg_vip.jpg',
-    subtitle: 'VIP Reserved Table Service & Extended Dune Bashing',
-    duration: '6 Hours (3:00 PM - 9:30 PM)',
-    pickup: 'VIP 4x4 SUV Hotel Pickup',
-    inclusions: [
-      '35+ Mins Extended Thrill Dune Bashing',
-      'Reserved VIP Carpeted Table with waiter service',
-      'Exclusive Gourmet BBQ Buffet & Live Seafood upgrade',
-      'Falconry photography experience & traditional costume',
-      'Camel riding & unlimited Henna design',
-      'Priority front-row stage view for all 3 Live Shows',
-      'Unlimited premium mocktails, soft drinks & Arabian tea'
-    ]
-  },
-  {
-    id: 'evening-standard',
-    title: 'Evening Standard Desert Safari',
-    category: 'evening',
-    badge: 'Budget Choice',
-    featured: false,
-    priceAED: 79,
-    img: 'assets/images/pkg_standard.jpg',
-    subtitle: 'Essential Desert Safari & BBQ Dinner Pass',
-    duration: '5.5 Hours (3:30 PM - 9:00 PM)',
-    pickup: 'Sharing 4x4 SUV Pickup',
-    inclusions: [
-      '15–20 Mins Dune Bashing experience',
-      'Sandboarding & Sunset photography point',
-      'Standard Bedouin camp entry & carpet seating',
-      'Arabic BBQ Buffet (Vegetarian & Non-Veg)',
-      'Live Tanoura & Belly Dance performances',
-      'Unlimited mineral water & soft drinks'
-    ]
-  },
-  {
-    id: 'combo-quad-safari',
-    title: 'Quad Bike + Evening Safari Combo',
-    category: 'combos',
-    badge: '🔥 Top Thrill',
-    featured: false,
-    priceAED: 299,
-    img: 'assets/images/pkg_quad.jpg',
-    subtitle: '30-Min Open Desert Quad Biking + Complete Evening Tour',
-    duration: '6.5 Hours (3:00 PM - 9:30 PM)',
-    pickup: 'Free Hotel Pickup Included',
-    inclusions: [
-      '30 Minutes High-Power 350cc Quad Bike session',
-      'Safety helmet & goggles provided with guide',
-      'Red Dune Land Cruiser bashing & sandboarding',
-      'Camel ride & Bedouin camp entry',
-      'Full 5-Star BBQ Dinner & Live Show performances',
-      'Unlimited drinks & refreshments'
-    ]
-  },
-  {
-    id: 'evening-short-private',
-    title: 'Evening Short Safari (Private SUV)',
-    category: 'short',
-    badge: 'Express Tour',
-    featured: false,
-    priceAED: 479,
-    img: 'assets/images/pkg_express.jpg',
-    subtitle: 'Focused Dune Bashing & Sunset without Camp Stay',
-    duration: '3.5 Hours (3:30 PM - 7:00 PM)',
-    pickup: 'Private 4x4 SUV (Up to 6 Passengers)',
-    inclusions: [
-      'Private 4x4 Land Cruiser dedicated to your group',
-      '30 Mins Extreme Red Dune Bashing',
-      'Sandboarding at panoramic dune summit',
-      'Sunset photo session with family/friends',
-      'Chilled mineral water & soft drinks',
-      'Direct return to hotel before evening'
-    ]
-  },
-  {
-    id: 'morning-short-private',
-    title: 'Morning Short Safari (Private SUV)',
-    category: 'morning',
-    badge: 'Morning Fresh',
-    featured: false,
-    priceAED: 449,
-    img: 'assets/images/pkg_camel_sunset.jpg',
-    subtitle: 'Crisp Morning Sand Dunes & Sand Surfing',
-    duration: '3 Hours (7:00 AM - 10:00 AM)',
-    pickup: 'Private 4x4 SUV Pickup',
-    inclusions: [
-      'Cool early morning dune bashing session',
-      'Sandboarding down pristine untouched slopes',
-      'Camel farm visit & camel riding',
-      'Fresh bottled water & juice refreshments',
-      'Back at your hotel in time for brunch'
-    ]
-  },
-  {
-    id: 'vip-traditional-arabic',
-    title: 'VIP Traditional Arabic Safari (Private)',
-    category: 'vip',
-    badge: 'Luxury Heritage',
-    featured: false,
-    priceAED: 999,
-    img: 'assets/images/pkg_heritage.jpg',
-    subtitle: 'Heritage Bedouin Experience in Private Reserve',
-    duration: '6.5 Hours (3:00 PM - 9:30 PM)',
-    pickup: 'Private Luxury 4x4 SUV Pickup',
-    inclusions: [
-      'Private Vintage / Luxury 4x4 Desert Transport',
-      'Exclusive Bedouin Camp Pavilion access',
-      'Interactive Arabic Cooking & Bread Making',
-      'Royal Falconry show & private portrait photo',
-      'Gourmet 7-Course Arabian Grill Dinner',
-      'Private Shisha lounge service'
-    ]
-  },
-  {
-    id: 'private-camp-setup',
-    title: 'Private Desert Camp Setup',
-    category: 'vip',
-    badge: 'Exclusive Oasis',
-    featured: false,
-    priceAED: 2599,
-    img: 'assets/images/pkg_private_camp.jpg',
-    subtitle: 'Entire Private Desert Camp for Groups & Events',
-    duration: 'Custom Duration',
-    pickup: 'Private Luxury Fleet Transport',
-    inclusions: [
-      'Entire desert camp venue reserved for your group',
-      'Customized 5-Star Catering Menu & Chef',
-      'Dedicated DJ, Sound System & Private Dancers',
-      'Private dune bashing & quad bike track',
-      'Ideal for corporate retreats, birthdays & anniversaries'
-    ]
-  },
-  {
-    id: 'sunrise-safari',
-    title: 'Sunrise Private Desert Safari',
-    category: 'morning',
-    badge: 'Golden Hour',
-    featured: false,
-    priceAED: 419,
-    img: 'assets/images/pkg_sunrise.jpg',
-    subtitle: 'Watch Sunrise Over Desert Dunes & Light Breakfast',
-    duration: '3.5 Hours (5:00 AM - 8:30 AM)',
-    pickup: 'Private 4x4 SUV Pick Up',
-    inclusions: [
-      'Early 5:00 AM hotel pickup to catch sunrise',
-      'Spectacular desert dawn photo opportunities',
-      'Morning dune bashing & sandboarding',
-      'Bedouin style continental light breakfast & coffee'
-    ]
-  },
   {
     id: 'selfdrive-standard',
     title: 'Self-Drive Standard Pass',
@@ -261,6 +82,185 @@ const PACKAGES = [
       'Falcon photo experience',
       'All Live Shows with front-row view'
     ]
+  },
+  {
+    id: 'evening-standard',
+    title: 'Evening Standard Desert Safari',
+    category: 'evening',
+    badge: 'Budget Choice',
+    featured: false,
+    priceAED: 79,
+    img: 'assets/images/pkg_standard.jpg',
+    subtitle: 'Essential Desert Safari & BBQ Dinner Pass',
+    duration: '5.5 Hours (3:30 PM - 9:00 PM)',
+    pickup: 'Sharing 4x4 SUV Pickup',
+    inclusions: [
+      '15–20 Mins Dune Bashing experience',
+      'Sandboarding & Sunset photography point',
+      'Standard Bedouin camp entry & carpet seating',
+      'Arabic BBQ Buffet (Vegetarian & Non-Veg)',
+      'Live Tanoura & Belly Dance performances',
+      'Unlimited mineral water & soft drinks'
+    ]
+  },
+  {
+    id: 'evening-premium',
+    title: 'Evening Premium Desert Safari',
+    category: 'evening',
+    badge: '★ Best Seller',
+    featured: true,
+    priceAED: 129,
+    img: 'assets/images/hero_desert.jpg',
+    subtitle: 'Full 6-Hour Lahbab Red Dune Experience & BBQ',
+    duration: '6 Hours (3:00 PM - 9:30 PM)',
+    pickup: 'Free 4x4 SUV Hotel Pickup & Drop',
+    inclusions: [
+      '25–30 Mins Lehbab Red Dune Bashing (4x4 Land Cruiser)',
+      'Sandboarding from high dune crests',
+      'Golden hour sunset photo stop',
+      'Bedouin camp welcome with Arabic coffee & dates',
+      'Camel riding & traditional Henna tattoo painting',
+      '5-Star Live BBQ Buffet (Veg & Non-Veg options)',
+      '3 Live Shows: Tanoura, Fire Performance & Belly Dance',
+      'Unlimited soft drinks, mineral water, tea & coffee'
+    ]
+  },
+  {
+    id: 'evening-vip',
+    title: 'Evening VIP Luxury Desert Safari',
+    category: 'vip',
+    badge: '👑 VIP Experience',
+    featured: false,
+    priceAED: 299,
+    img: 'assets/images/pkg_vip.jpg',
+    subtitle: 'VIP Reserved Table Service & Extended Dune Bashing',
+    duration: '6 Hours (3:00 PM - 9:30 PM)',
+    pickup: 'VIP 4x4 SUV Hotel Pickup',
+    inclusions: [
+      '35+ Mins Extended Thrill Dune Bashing',
+      'Reserved VIP Carpeted Table with waiter service',
+      'Exclusive Gourmet BBQ Buffet & Live Seafood upgrade',
+      'Falconry photography experience & traditional costume',
+      'Camel riding & unlimited Henna design',
+      'Priority front-row stage view for all 3 Live Shows',
+      'Unlimited premium mocktails, soft drinks & Arabian tea'
+    ]
+  },
+  {
+    id: 'combo-quad-safari',
+    title: 'Quad Bike + Evening Safari Combo',
+    category: 'combos',
+    badge: '🔥 Top Thrill',
+    featured: false,
+    priceAED: 299,
+    img: 'assets/images/pkg_quad.jpg',
+    subtitle: '30-Min Open Desert Quad Biking + Complete Evening Tour',
+    duration: '6.5 Hours (3:00 PM - 9:30 PM)',
+    pickup: 'Free Hotel Pickup Included',
+    inclusions: [
+      '30 Minutes High-Power 350cc Quad Bike session',
+      'Safety helmet & goggles provided with guide',
+      'Red Dune Land Cruiser bashing & sandboarding',
+      'Camel ride & Bedouin camp entry',
+      'Full 5-Star BBQ Dinner & Live Show performances',
+      'Unlimited drinks & refreshments'
+    ]
+  },
+  {
+    id: 'sunrise-safari',
+    title: 'Sunrise Private Desert Safari',
+    category: 'morning',
+    badge: 'Golden Hour',
+    featured: false,
+    priceAED: 419,
+    img: 'assets/images/pkg_sunrise.jpg',
+    subtitle: 'Watch Sunrise Over Desert Dunes & Light Breakfast',
+    duration: '3.5 Hours (5:00 AM - 8:30 AM)',
+    pickup: 'Private 4x4 SUV Pick Up',
+    inclusions: [
+      'Early 5:00 AM hotel pickup to catch sunrise',
+      'Spectacular desert dawn photo opportunities',
+      'Morning dune bashing & sandboarding',
+      'Bedouin style continental light breakfast & coffee'
+    ]
+  },
+  {
+    id: 'morning-short-private',
+    title: 'Morning Short Safari (Private SUV)',
+    category: 'morning',
+    badge: 'Morning Fresh',
+    featured: false,
+    priceAED: 449,
+    img: 'assets/images/pkg_camel_sunset.jpg',
+    subtitle: 'Crisp Morning Sand Dunes & Sand Surfing',
+    duration: '3 Hours (7:00 AM - 10:00 AM)',
+    pickup: 'Private 4x4 SUV Pickup',
+    inclusions: [
+      'Cool early morning dune bashing session',
+      'Sandboarding down pristine untouched slopes',
+      'Camel farm visit & camel riding',
+      'Fresh bottled water & juice refreshments',
+      'Back at your hotel in time for brunch'
+    ]
+  },
+  {
+    id: 'evening-short-private',
+    title: 'Evening Short Safari (Private SUV)',
+    category: 'short',
+    badge: 'Express Tour',
+    featured: false,
+    priceAED: 479,
+    img: 'assets/images/pkg_express.jpg',
+    subtitle: 'Focused Dune Bashing & Sunset without Camp Stay',
+    duration: '3.5 Hours (3:30 PM - 7:00 PM)',
+    pickup: 'Private 4x4 SUV (Up to 6 Passengers)',
+    inclusions: [
+      'Private 4x4 Land Cruiser dedicated to your group',
+      '30 Mins Extreme Red Dune Bashing',
+      'Sandboarding at panoramic dune summit',
+      'Sunset photo session with family/friends',
+      'Chilled mineral water & soft drinks',
+      'Direct return to hotel before evening'
+    ]
+  },
+  {
+    id: 'vip-traditional-arabic',
+    title: 'VIP Traditional Arabic Safari (Private)',
+    category: 'vip',
+    badge: 'Luxury Heritage',
+    featured: false,
+    priceAED: 999,
+    img: 'assets/images/pkg_heritage.jpg',
+    subtitle: 'Heritage Bedouin Experience in Private Reserve',
+    duration: '6.5 Hours (3:00 PM - 9:30 PM)',
+    pickup: 'Private Luxury 4x4 SUV Pickup',
+    inclusions: [
+      'Private Vintage / Luxury 4x4 Desert Transport',
+      'Exclusive Bedouin Camp Pavilion access',
+      'Interactive Arabic Cooking & Bread Making',
+      'Royal Falconry show & private portrait photo',
+      'Gourmet 7-Course Arabian Grill Dinner',
+      'Private Shisha lounge service'
+    ]
+  },
+  {
+    id: 'private-camp-setup',
+    title: 'Private Desert Camp Setup',
+    category: 'vip',
+    badge: 'Exclusive Oasis',
+    featured: false,
+    priceAED: 2599,
+    img: 'assets/images/pkg_private_camp.jpg',
+    subtitle: 'Entire Private Desert Camp for Groups & Events',
+    duration: 'Custom Duration',
+    pickup: 'Private Luxury Fleet Transport',
+    inclusions: [
+      'Entire desert camp venue reserved for your group',
+      'Customized 5-Star Catering Menu & Chef',
+      'Dedicated DJ, Sound System & Private Dancers',
+      'Private dune bashing & quad bike track',
+      'Ideal for corporate retreats, birthdays & anniversaries'
+    ]
   }
 ];
 
@@ -275,7 +275,9 @@ function renderPackages(category = 'all') {
     ? PACKAGES 
     : PACKAGES.filter(p => p.category === category);
 
-  grid.innerHTML = filtered.map(pkg => `
+  const sorted = [...filtered].sort((a, b) => a.priceAED - b.priceAED);
+
+  grid.innerHTML = sorted.map(pkg => `
     <div class="package-card ${pkg.featured ? 'featured' : ''}">
       ${pkg.badge ? `<div class="package-badge">${pkg.badge}</div>` : ''}
       <div class="package-img-wrapper">
