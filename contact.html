@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Red Camel Desert Safari Dubai</title>
+  <meta name="description" content="Contact Red Camel Desert Safari Dubai team 24/7. Office location in Business Bay, direct WhatsApp support, phone, email & online safari inquiry form.">
+  <meta name="keywords" content="Contact Red Camel Safari, Dubai desert safari contact number, WhatsApp desert safari booking Dubai">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🐪</text></svg>">
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       HEADER / STICKY NAVIGATION
+       ========================================================================== -->
+  <header class="header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+        <div class="logo-badge-icon">🐪</div>
+        <div class="logo-text">
+          <span class="logo-title">RED CAMEL</span>
+          <span class="logo-sub">DESERT SAFARI DUBAI</span>
+        </div>
+      </a>
+
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link">About Us</a></li>
+        <li><a href="packages.html" class="nav-link">Packages</a></li>
+        <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+        <li><a href="contact.html" class="nav-link active">Contact</a></li>
+      </ul>
+
+      <div class="header-controls">
+        <!-- Currency Converter -->
+        <div class="currency-selector">
+          <button class="currency-btn" id="currencyBtn" aria-label="Select Currency">
+            <span>🌐</span>
+            <span class="curr-code">AED</span>
+            <small>▼</small>
+          </button>
+          <div class="currency-dropdown" id="currencyDropdown">
+            <button class="currency-opt selected" data-curr="AED"><span>AED</span> <span>Dirham</span></button>
+            <button class="currency-opt" data-curr="USD"><span>USD</span> <span>Dollar</span></button>
+            <button class="currency-opt" data-curr="EUR"><span>EUR</span> <span>Euro</span></button>
+            <button class="currency-opt" data-curr="GBP"><span>GBP</span> <span>Pound</span></button>
+            <button class="currency-opt" data-curr="SAR"><span>SAR</span> <span>Riyal</span></button>
+            <button class="currency-opt" data-curr="INR"><span>INR</span> <span>Rupee</span></button>
+          </div>
+        </div>
+
+        <button class="btn btn-primary header-book-btn" onclick="openBookingDrawer('evening-premium')">
+          <span>Book Safari</span>
+          <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M3 8h10M9 4l4 4-4 4"/>
+          </svg>
+        </button>
+
+        <button class="burger-btn" id="burgerBtn" aria-label="Toggle Mobile Menu">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <path d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       PAGE HERO BANNER
+       ========================================================================== -->
+  <section class="page-banner">
+    <div class="container">
+      <span class="section-eyebrow">WE ARE HERE TO HELP 24/7</span>
+      <h1 class="page-banner-title">Contact <span class="gradient-text-gold">Red Camel</span> Safari</h1>
+      <p class="page-banner-desc">
+        Have a question or special request for your upcoming Dubai safari? Connect with our dedicated operations team via WhatsApp, phone, or email.
+      </p>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       CONTACT GRID & INQUIRY FORM
+       ========================================================================== -->
+  <section class="section">
+    <div class="container">
+      <div class="contact-grid">
+
+        <!-- Contact Info Cards -->
+        <div class="contact-info-cards">
+          <div class="contact-card">
+            <div class="contact-card-icon">💬</div>
+            <div>
+              <h3 class="contact-card-title">24/7 WhatsApp Support</h3>
+              <p class="contact-card-text">+971 54 450 8581<br><small style="color: var(--gold-light);">Instant responses for bookings & pickup updates</small></p>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-card-icon">📞</div>
+            <div>
+              <h3 class="contact-card-title">Phone Direct Line</h3>
+              <p class="contact-card-text">+971 54 450 8581<br><small style="color: var(--text-muted);">Available daily from 7:00 AM – 11:00 PM (GST)</small></p>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-card-icon">✉️</div>
+            <div>
+              <h3 class="contact-card-title">Email Inquiry</h3>
+              <p class="contact-card-text">info@redcameldesertsafari.com<br><small style="color: var(--text-muted);">For corporate retreats, group events & custom quotes</small></p>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-card-icon">📍</div>
+            <div>
+              <h3 class="contact-card-title">Headquarters & License</h3>
+              <p class="contact-card-text">Office 4E-33, Business Bay, Dubai, UAE<br><strong style="color: var(--gold-primary);">DET License No: 1274693</strong></p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form-wrap">
+          <h3 style="font-family: var(--font-heading); font-size: 1.5rem; margin-bottom: 8px;">Send an Instant Inquiry</h3>
+          <p style="color: var(--text-secondary); font-size: 0.95rem; margin-bottom: 24px;">Fill out the details below and our operations manager will respond within 15 minutes.</p>
+
+          <form onsubmit="submitBookingToWhatsapp(event)">
+            <div class="form-group">
+              <label class="form-label">Full Name</label>
+              <input type="text" class="form-control" id="bookName" placeholder="e.g. Sarah Connor" required>
+            </div>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+              <div class="form-group">
+                <label class="form-label">Email Address</label>
+                <input type="email" class="form-control" placeholder="name@example.com" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label">Phone / WhatsApp</label>
+                <input type="tel" class="form-control" placeholder="+1 234 567 890" required>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Select Interested Safari</label>
+              <select class="form-control" id="bookPackageSelect">
+                <option value="evening-premium">Evening Premium Safari (AED 129)</option>
+                <option value="evening-vip">Evening VIP Luxury Safari (AED 299)</option>
+                <option value="combo-quad-safari">Quad Bike + Evening Safari Combo (AED 299)</option>
+                <option value="evening-standard">Evening Standard Safari (AED 79)</option>
+                <option value="private-camp-setup">Private Desert Camp Setup (AED 2,599)</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Pick-Up Hotel or Area</label>
+              <input type="text" class="form-control" id="bookHotel" placeholder="e.g. Dubai Marina / Downtown Dubai" required>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Your Message or Questions</label>
+              <textarea class="form-control" rows="4" placeholder="Mention preferred date, guest count, or any special requirements..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 10px;">
+              <span>Submit Inquiry via WhatsApp</span>
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       FAQ ACCORDION & SEARCH
+       ========================================================================== -->
+  <section class="section" id="faq" style="background: var(--bg-surface); border-top: 1px solid var(--border-light);">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow">GOT QUESTIONS?</span>
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <p class="section-desc">Everything you need to know before your Dubai desert adventure.</p>
+      </div>
+
+      <div class="faq-search-wrap">
+        <input type="text" class="faq-input" id="faqSearch" placeholder="Search questions (e.g. pickup, dress code, kids, vegetarian)...">
+      </div>
+
+      <div class="faq-list">
+        <div class="faq-item active">
+          <button class="faq-question">
+            <span>What is included in the Evening Premium Desert Safari?</span>
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M19 9l-7 7-7-7"/>
+            </svg>
+          </button>
+          <div class="faq-answer">
+            <p>The Premium package covers free door-to-door hotel pickup/drop-off in a Toyota Land Cruiser 4x4, 25-30 mins dune bashing in Lahbab red dunes, sandboarding, sunset photos, camel riding, priority majlis seating, full 5-star BBQ buffet dinner (veg & non-veg options), unlimited soft drinks, tea/coffee, henna design, and all 3 live entertainment shows (Tanoura, Belly dance, Fire show).</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Is hotel pickup included from anywhere in Dubai?</span>
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M19 9l-7 7-7-7"/>
+            </svg>
+          </button>
+          <div class="faq-answer">
+            <p>Yes! Free door-to-door pickup and drop-off is included from any hotel, apartment, or residential building in Dubai and selected areas of Sharjah. For Abu Dhabi or Ras Al Khaimah pickups, a custom private transport surcharge applies.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>What is your cancellation & payment policy?</span>
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M19 9l-7 7-7-7"/>
+            </svg>
+          </button>
+          <div class="faq-answer">
+            <p>We offer 100% Free Cancellation up to 24 hours prior to pickup. You do not need to pay anything in advance to secure your booking. You pay on the date of your tour directly to your driver in cash (AED, USD, EUR) or by credit card.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Are vegetarian and Halal options available at the BBQ dinner?</span>
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M19 9l-7 7-7-7"/>
+            </svg>
+          </button>
+          <div class="faq-answer">
+            <p>Yes. All meats served are 100% Halal certified. The buffet features separate vegetarian and non-vegetarian sections, including grilled chicken, lamb kebabs, falafel, hummus, biryani rice, fresh salads, and Arabic desserts. Vegan options are also available.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>What should I wear for a desert safari?</span>
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M19 9l-7 7-7-7"/>
+            </svg>
+          </button>
+          <div class="faq-answer">
+            <p>We recommend lightweight, comfortable cotton clothing and sneakers or sandals. Sunglasses and a sun hat are useful during golden hour. From November to March, desert evenings can get cool, so bringing a light jacket or cardigan is recommended.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       BOOKING MODAL / DRAWER
+       ========================================================================== -->
+  <div class="modal-overlay" id="bookingModal" onclick="closeBookingDrawer()">
+    <div class="booking-drawer" id="bookingDrawer" onclick="event.stopPropagation()">
+      <div class="drawer-header">
+        <h3 class="drawer-title">Reserve Desert Safari</h3>
+        <button class="close-btn" onclick="closeBookingDrawer()" aria-label="Close Drawer">✕</button>
+      </div>
+
+      <div class="drawer-body">
+        <form id="bookingForm" onsubmit="submitBookingToWhatsapp(event)">
+          <div class="form-group">
+            <label class="form-label">Select Package</label>
+            <select class="form-control" id="bookPackageSelect">
+              <option value="selfdrive-standard">Self-Drive Standard Pass (AED 35)</option>
+              <option value="selfdrive-premium">Self-Drive Premium Pass (AED 59)</option>
+              <option value="selfdrive-vip">Self-Drive VIP Pass (AED 75)</option>
+              <option value="evening-standard">Evening Standard Safari (AED 79)</option>
+              <option value="evening-premium">Evening Premium Safari (AED 129)</option>
+              <option value="evening-vip">Evening VIP Luxury Safari (AED 299)</option>
+              <option value="combo-quad-safari">Quad Bike + Evening Safari Combo (AED 299)</option>
+              <option value="sunrise-safari">Sunrise Private Safari (AED 419)</option>
+              <option value="morning-short-private">Morning Short Safari - Private (AED 449)</option>
+              <option value="evening-short-private">Evening Short Safari - Private (AED 479)</option>
+              <option value="vip-traditional-arabic">VIP Traditional Arabic - Private (AED 999)</option>
+              <option value="private-camp-setup">Private Desert Camp Setup (AED 2,599)</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Safari Date</label>
+            <input type="date" class="form-control" id="bookDate" required>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Number of Guests</label>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px;">
+              <div class="counter-wrap">
+                <span>Adults</span>
+                <div style="display: flex; align-items: center; gap: 10px;">
+                  <button type="button" class="counter-btn" onclick="updateCounter('adult', -1)">-</button>
+                  <span id="adultCountEl" style="font-weight: 800; font-size: 1rem;">2</span>
+                  <button type="button" class="counter-btn" onclick="updateCounter('adult', 1)">+</button>
+                </div>
+              </div>
+              <div class="counter-wrap">
+                <span>Kids (3-11y, 25% Off)</span>
+                <div style="display: flex; align-items: center; gap: 10px;">
+                  <button type="button" class="counter-btn" onclick="updateCounter('child', -1)">-</button>
+                  <span id="childCountEl" style="font-weight: 800; font-size: 1rem;">0</span>
+                  <button type="button" class="counter-btn" onclick="updateCounter('child', 1)">+</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Transport Choice</label>
+            <select class="form-control" id="transportSelect">
+              <option value="sharing">Sharing 4x4 SUV (Included Free)</option>
+              <option value="private">Private 4x4 Land Cruiser (+400 AED Flat)</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Add-on Quad Bike Ride</label>
+            <select class="form-control" id="quadSelect">
+              <option value="none">No Quad Bike</option>
+              <option value="30m">30 Min Quad Bike (+150 AED / pax)</option>
+              <option value="60m">60 Min Quad Bike (+250 AED / pax)</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Lead Guest Name</label>
+            <input type="text" class="form-control" id="bookName" placeholder="e.g. John Smith" required>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Hotel / Pick-Up Location</label>
+            <input type="text" class="form-control" id="bookHotel" placeholder="e.g. Atlantis The Palm / Address Downtown" required>
+          </div>
+
+          <div class="price-breakdown">
+            <div class="breakdown-row">
+              <span>Adults Subtotal</span>
+              <span id="subtotalAdults">2 × AED 129</span>
+            </div>
+            <div class="breakdown-row">
+              <span>Children Subtotal</span>
+              <span id="subtotalChildren">0 × AED 97</span>
+            </div>
+            <div class="breakdown-row">
+              <span>Transport</span>
+              <span id="subtotalTransport">Free Included</span>
+            </div>
+            <div class="breakdown-total">
+              <span>Payable on Arrival</span>
+              <span id="grandTotalEl" style="color: var(--gold-primary);">AED 258</span>
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-whatsapp" style="width: 100%; margin-top: 18px;">
+            <span>💬 Send Reservation via WhatsApp</span>
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- FLOATING WHATSAPP BUTTON -->
+  <a href="https://wa.me/971544508581" target="_blank" rel="noopener" class="floating-wa" aria-label="Contact Red Camel Safari on WhatsApp">
+    💬
+  </a>
+
+  <!-- ==========================================================================
+       FOOTER
+       ========================================================================== -->
+  <footer class="footer" id="contact">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="index.html" class="logo" style="margin-bottom: 18px;">
+            <div class="logo-badge-icon">🐪</div>
+            <div class="logo-text">
+              <span class="logo-title">RED CAMEL</span>
+              <span class="logo-sub">DESERT SAFARI DUBAI</span>
+            </div>
+          </a>
+          <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.6; max-width: 340px;">
+            DET-licensed direct desert safari operator in Dubai since 2010. Authentic Bedouin hospitality, Lehbab red dune bashing, VIP luxury setups, and 0 reseller commissions.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Quick Pages</h4>
+          <ul class="footer-links">
+            <li><a href="index.html" class="footer-link">Home</a></li>
+            <li><a href="about.html" class="footer-link">About Us</a></li>
+            <li><a href="packages.html" class="footer-link">Safari Packages</a></li>
+            <li><a href="gallery.html" class="footer-link">Photo Gallery</a></li>
+            <li><a href="contact.html" class="footer-link">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Popular Packages</h4>
+          <ul class="footer-links">
+            <li><a href="packages.html" class="footer-link">Evening Premium Safari</a></li>
+            <li><a href="packages.html" class="footer-link">Evening VIP Luxury Safari</a></li>
+            <li><a href="packages.html" class="footer-link">Standard Desert Safari</a></li>
+            <li><a href="packages.html" class="footer-link">Quad Bike & Buggy Combos</a></li>
+            <li><a href="packages.html" class="footer-link">Private Camp Setup</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Contact & License</h4>
+          <ul class="footer-links">
+            <li style="color: var(--text-secondary); font-size: 0.88rem;">📍 Office 4E-33, Business Bay, Dubai, UAE</li>
+            <li style="color: var(--text-secondary); font-size: 0.88rem;">📞 Phone: +971 54 450 8581</li>
+            <li style="color: var(--text-secondary); font-size: 0.88rem;">✉️ Email: info@redcameldesertsafari.com</li>
+            <li style="color: var(--gold-light); font-size: 0.85rem; font-weight: 700; margin-top: 8px;">DET License No: 1274693</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 Red Camel Desert Safari Dubai. All Rights Reserved.</div>
+        <div style="display: flex; gap: 16px;">
+          <span>💵 Cash Accepted</span>
+          <span>💳 Visa / MasterCard</span>
+          <span>🔒 Secure Booking</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

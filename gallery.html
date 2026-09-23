@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Photo Gallery | Red Camel Desert Safari Dubai</title>
+  <meta name="description" content="View authentic photos from Red Camel Desert Safari Dubai: Red dune bashing, Bedouin camp dining, quad biking, sunset views & live entertainment.">
+  <meta name="keywords" content="Dubai desert safari photos, dune bashing gallery, desert safari pictures Dubai, Red Camel photo gallery">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🐪</text></svg>">
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       HEADER / STICKY NAVIGATION
+       ========================================================================== -->
+  <header class="header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+        <div class="logo-badge-icon">🐪</div>
+        <div class="logo-text">
+          <span class="logo-title">RED CAMEL</span>
+          <span class="logo-sub">DESERT SAFARI DUBAI</span>
+        </div>
+      </a>
+
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link">About Us</a></li>
+        <li><a href="packages.html" class="nav-link">Packages</a></li>
+        <li><a href="gallery.html" class="nav-link active">Gallery</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="header-controls">
+        <!-- Currency Converter -->
+        <div class="currency-selector">
+          <button class="currency-btn" id="currencyBtn" aria-label="Select Currency">
+            <span>🌐</span>
+            <span class="curr-code">AED</span>
+            <small>▼</small>
+          </button>
+          <div class="currency-dropdown" id="currencyDropdown">
+            <button class="currency-opt selected" data-curr="AED"><span>AED</span> <span>Dirham</span></button>
+            <button class="currency-opt" data-curr="USD"><span>USD</span> <span>Dollar</span></button>
+            <button class="currency-opt" data-curr="EUR"><span>EUR</span> <span>Euro</span></button>
+            <button class="currency-opt" data-curr="GBP"><span>GBP</span> <span>Pound</span></button>
+            <button class="currency-opt" data-curr="SAR"><span>SAR</span> <span>Riyal</span></button>
+            <button class="currency-opt" data-curr="INR"><span>INR</span> <span>Rupee</span></button>
+          </div>
+        </div>
+
+        <button class="btn btn-primary header-book-btn" onclick="openBookingDrawer('evening-premium')">
+          <span>Book Safari</span>
+          <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M3 8h10M9 4l4 4-4 4"/>
+          </svg>
+        </button>
+
+        <button class="burger-btn" id="burgerBtn" aria-label="Toggle Mobile Menu">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <path d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       PAGE HERO BANNER
+       ========================================================================== -->
+  <section class="page-banner">
+    <div class="container">
+      <span class="section-eyebrow">UNFILTERED REAL MOMENTS</span>
+      <h1 class="page-banner-title">Desert Safari <span class="gradient-text-gold">Gallery</span></h1>
+      <p class="page-banner-desc">
+        Explore real photos from our Lahbab red dune bashing tours, Bedouin camp nights, quad biking adventures, and golden hour sunsets.
+      </p>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       PHOTO GALLERY GRID
+       ========================================================================== -->
+  <section class="section" id="gallery">
+    <div class="container">
+      <div class="gallery-grid">
+        <div class="gallery-item" onclick="openLightbox('assets/images/hero_desert.jpg', 'Red Dune Bashing in Toyota Land Cruiser 4x4')">
+          <img src="assets/images/hero_desert.jpg" alt="Dune Bashing" class="gallery-img" loading="lazy">
+          <div class="gallery-caption">
+            <div class="gallery-title">Red Dune Bashing</div>
+            <div class="gallery-sub">Lahbab Red Dunes, Dubai</div>
+          </div>
+        </div>
+
+        <div class="gallery-item" onclick="openLightbox('assets/images/pkg_private_camp.jpg', 'Luxury Bedouin Desert Camp under Night Stars')">
+          <img src="assets/images/pkg_private_camp.jpg" alt="VIP Camp" class="gallery-img" loading="lazy">
+          <div class="gallery-caption">
+            <div class="gallery-title">Bedouin Camp at Night</div>
+            <div class="gallery-sub">Under Arabian Stars</div>
+          </div>
+        </div>
+
+        <div class="gallery-item" onclick="openLightbox('assets/images/pkg_quad.jpg', 'High Performance Quad Biking & Dune Buggy Adventure')">
+          <img src="assets/images/pkg_quad.jpg" alt="Quad Biking" class="gallery-img" loading="lazy">
+          <div class="gallery-caption">
+            <div class="gallery-title">Quad & Buggy Safari</div>
+            <div class="gallery-sub">350cc & 1000cc Can-Am</div>
+          </div>
+        </div>
+
+        <div class="gallery-item" onclick="openLightbox('assets/images/pkg_camel_sunset.jpg', 'Camel Riding & Golden Hour Sunset View')">
+          <img src="assets/images/pkg_camel_sunset.jpg" alt="Camel Sunset" class="gallery-img" loading="lazy">
+          <div class="gallery-caption">
+            <div class="gallery-title">Camel & Sunset View</div>
+            <div class="gallery-sub">Golden Hour Dunes</div>
+          </div>
+        </div>
+
+        <div class="gallery-item" onclick="openLightbox('assets/images/pkg_bbq_show.jpg', 'Tanoura Dance, Fire Show & BBQ Feast')">
+          <img src="assets/images/pkg_bbq_show.jpg" alt="Live Shows" class="gallery-img" loading="lazy">
+          <div class="gallery-caption">
+            <div class="gallery-title">Live Stage Entertainment</div>
+            <div class="gallery-sub">Tanoura & Fire Show</div>
+          </div>
+        </div>
+
+        <div class="gallery-item" onclick="openLightbox('assets/images/gal_sandboarding.jpg', 'Sandboarding thrills on high red dune slopes')">
+          <img src="assets/images/gal_sandboarding.jpg" alt="Sandboarding" class="gallery-img" loading="lazy">
+          <div class="gallery-caption">
+            <div class="gallery-title">Sandboarding Action</div>
+            <div class="gallery-sub">Red Dune Surfing</div>
+          </div>
+        </div>
+
+        <div class="gallery-item" onclick="openLightbox('assets/images/itin_pickup.jpg', 'Door-to-door 4x4 SUV Hotel Pickup in Dubai')">
+          <img src="assets/images/itin_pickup.jpg" alt="4x4 SUV Pickup" class="gallery-img" loading="lazy">
+          <div class="gallery-caption">
+            <div class="gallery-title">Luxury 4x4 Fleet</div>
+            <div class="gallery-sub">Toyota Land Cruisers</div>
+          </div>
+        </div>
+
+        <div class="gallery-item" onclick="openLightbox('assets/images/pkg_sunrise.jpg', 'Dawn Desert Sunrise Photography Session')">
+          <img src="assets/images/pkg_sunrise.jpg" alt="Sunrise Safari" class="gallery-img" loading="lazy">
+          <div class="gallery-caption">
+            <div class="gallery-title">Sunrise over Dunes</div>
+            <div class="gallery-sub">Early Dawn Beauty</div>
+          </div>
+        </div>
+
+        <div class="gallery-item" onclick="openLightbox('assets/images/itin_welcome.jpg', 'Traditional Arabian Coffee & Henna Welcome')">
+          <img src="assets/images/itin_welcome.jpg" alt="Arabic Welcome" class="gallery-img" loading="lazy">
+          <div class="gallery-caption">
+            <div class="gallery-title">Bedouin Welcome</div>
+            <div class="gallery-sub">Arabic Gahwa & Dates</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       LIGHTBOX MODAL
+       ========================================================================== -->
+  <div class="modal-overlay" id="lightboxModal" onclick="closeLightbox()">
+    <div style="position: relative; text-align: center;" onclick="event.stopPropagation()">
+      <img id="lightboxImg" src="" alt="Gallery Image" class="lightbox-img">
+      <div id="lightboxCaption" style="margin-top: 14px; font-weight: 700; color: #FFF; font-size: 1.1rem;"></div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       BOOKING MODAL / DRAWER
+       ========================================================================== -->
+  <div class="modal-overlay" id="bookingModal" onclick="closeBookingDrawer()">
+    <div class="booking-drawer" id="bookingDrawer" onclick="event.stopPropagation()">
+      <div class="drawer-header">
+        <h3 class="drawer-title">Reserve Desert Safari</h3>
+        <button class="close-btn" onclick="closeBookingDrawer()" aria-label="Close Drawer">✕</button>
+      </div>
+
+      <div class="drawer-body">
+        <form id="bookingForm" onsubmit="submitBookingToWhatsapp(event)">
+          <div class="form-group">
+            <label class="form-label">Select Package</label>
+            <select class="form-control" id="bookPackageSelect">
+              <option value="selfdrive-standard">Self-Drive Standard Pass (AED 35)</option>
+              <option value="selfdrive-premium">Self-Drive Premium Pass (AED 59)</option>
+              <option value="selfdrive-vip">Self-Drive VIP Pass (AED 75)</option>
+              <option value="evening-standard">Evening Standard Safari (AED 79)</option>
+              <option value="evening-premium">Evening Premium Safari (AED 129)</option>
+              <option value="evening-vip">Evening VIP Luxury Safari (AED 299)</option>
+              <option value="combo-quad-safari">Quad Bike + Evening Safari Combo (AED 299)</option>
+              <option value="sunrise-safari">Sunrise Private Safari (AED 419)</option>
+              <option value="morning-short-private">Morning Short Safari - Private (AED 449)</option>
+              <option value="evening-short-private">Evening Short Safari - Private (AED 479)</option>
+              <option value="vip-traditional-arabic">VIP Traditional Arabic - Private (AED 999)</option>
+              <option value="private-camp-setup">Private Desert Camp Setup (AED 2,599)</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Safari Date</label>
+            <input type="date" class="form-control" id="bookDate" required>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Number of Guests</label>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px;">
+              <div class="counter-wrap">
+                <span>Adults</span>
+                <div style="display: flex; align-items: center; gap: 10px;">
+                  <button type="button" class="counter-btn" onclick="updateCounter('adult', -1)">-</button>
+                  <span id="adultCountEl" style="font-weight: 800; font-size: 1rem;">2</span>
+                  <button type="button" class="counter-btn" onclick="updateCounter('adult', 1)">+</button>
+                </div>
+              </div>
+              <div class="counter-wrap">
+                <span>Kids (3-11y, 25% Off)</span>
+                <div style="display: flex; align-items: center; gap: 10px;">
+                  <button type="button" class="counter-btn" onclick="updateCounter('child', -1)">-</button>
+                  <span id="childCountEl" style="font-weight: 800; font-size: 1rem;">0</span>
+                  <button type="button" class="counter-btn" onclick="updateCounter('child', 1)">+</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Transport Choice</label>
+            <select class="form-control" id="transportSelect">
+              <option value="sharing">Sharing 4x4 SUV (Included Free)</option>
+              <option value="private">Private 4x4 Land Cruiser (+400 AED Flat)</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Add-on Quad Bike Ride</label>
+            <select class="form-control" id="quadSelect">
+              <option value="none">No Quad Bike</option>
+              <option value="30m">30 Min Quad Bike (+150 AED / pax)</option>
+              <option value="60m">60 Min Quad Bike (+250 AED / pax)</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Lead Guest Name</label>
+            <input type="text" class="form-control" id="bookName" placeholder="e.g. John Smith" required>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Hotel / Pick-Up Location</label>
+            <input type="text" class="form-control" id="bookHotel" placeholder="e.g. Atlantis The Palm / Address Downtown" required>
+          </div>
+
+          <div class="price-breakdown">
+            <div class="breakdown-row">
+              <span>Adults Subtotal</span>
+              <span id="subtotalAdults">2 × AED 129</span>
+            </div>
+            <div class="breakdown-row">
+              <span>Children Subtotal</span>
+              <span id="subtotalChildren">0 × AED 97</span>
+            </div>
+            <div class="breakdown-row">
+              <span>Transport</span>
+              <span id="subtotalTransport">Free Included</span>
+            </div>
+            <div class="breakdown-total">
+              <span>Payable on Arrival</span>
+              <span id="grandTotalEl" style="color: var(--gold-primary);">AED 258</span>
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-whatsapp" style="width: 100%; margin-top: 18px;">
+            <span>💬 Send Reservation via WhatsApp</span>
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- FLOATING WHATSAPP BUTTON -->
+  <a href="https://wa.me/971544508581" target="_blank" rel="noopener" class="floating-wa" aria-label="Contact Red Camel Safari on WhatsApp">
+    💬
+  </a>
+
+  <!-- ==========================================================================
+       FOOTER
+       ========================================================================== -->
+  <footer class="footer" id="contact">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="index.html" class="logo" style="margin-bottom: 18px;">
+            <div class="logo-badge-icon">🐪</div>
+            <div class="logo-text">
+              <span class="logo-title">RED CAMEL</span>
+              <span class="logo-sub">DESERT SAFARI DUBAI</span>
+            </div>
+          </a>
+          <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.6; max-width: 340px;">
+            DET-licensed direct desert safari operator in Dubai since 2010. Authentic Bedouin hospitality, Lehbab red dune bashing, VIP luxury setups, and 0 reseller commissions.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Quick Pages</h4>
+          <ul class="footer-links">
+            <li><a href="index.html" class="footer-link">Home</a></li>
+            <li><a href="about.html" class="footer-link">About Us</a></li>
+            <li><a href="packages.html" class="footer-link">Safari Packages</a></li>
+            <li><a href="gallery.html" class="footer-link">Photo Gallery</a></li>
+            <li><a href="contact.html" class="footer-link">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Popular Packages</h4>
+          <ul class="footer-links">
+            <li><a href="packages.html" class="footer-link">Evening Premium Safari</a></li>
+            <li><a href="packages.html" class="footer-link">Evening VIP Luxury Safari</a></li>
+            <li><a href="packages.html" class="footer-link">Standard Desert Safari</a></li>
+            <li><a href="packages.html" class="footer-link">Quad Bike & Buggy Combos</a></li>
+            <li><a href="packages.html" class="footer-link">Private Camp Setup</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Contact & License</h4>
+          <ul class="footer-links">
+            <li style="color: var(--text-secondary); font-size: 0.88rem;">📍 Office 4E-33, Business Bay, Dubai, UAE</li>
+            <li style="color: var(--text-secondary); font-size: 0.88rem;">📞 Phone: +971 54 450 8581</li>
+            <li style="color: var(--text-secondary); font-size: 0.88rem;">✉️ Email: info@redcameldesertsafari.com</li>
+            <li style="color: var(--gold-light); font-size: 0.85rem; font-weight: 700; margin-top: 8px;">DET License No: 1274693</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 Red Camel Desert Safari Dubai. All Rights Reserved.</div>
+        <div style="display: flex; gap: 16px;">
+          <span>💵 Cash Accepted</span>
+          <span>💳 Visa / MasterCard</span>
+          <span>🔒 Secure Booking</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

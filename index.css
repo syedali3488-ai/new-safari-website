@@ -1447,3 +1447,96 @@ img {
     grid-template-columns: 1fr;
   }
 }
+
+/* ==========================================================================
+   PAGE HERO BANNER & CONTACT STYLES
+   ========================================================================== */
+.page-banner {
+  position: relative;
+  padding: 130px 0 60px;
+  background: linear-gradient(180deg, rgba(7, 9, 14, 0.95) 0%, rgba(14, 19, 31, 0.9) 100%), url('assets/images/hero_desert.jpg') center/cover no-repeat;
+  border-bottom: 1px solid var(--border-gold);
+  text-align: center;
+}
+
+.page-banner-title {
+  font-family: var(--font-heading);
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  color: var(--text-main);
+  margin-bottom: 12px;
+}
+
+.page-banner-desc {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  gap: 40px;
+  align-items: start;
+}
+
+@media (max-width: 900px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.contact-info-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-gold);
+  border-radius: var(--radius-md);
+  padding: 24px;
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+  transition: var(--transition);
+}
+
+.contact-card:hover {
+  border-color: var(--gold-primary);
+  transform: translateY(-2px);
+}
+
+.contact-card-icon {
+  font-size: 1.8rem;
+  background: rgba(229, 184, 66, 0.1);
+  width: 54px;
+  height: 54px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.contact-card-title {
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  color: var(--gold-light);
+  margin-bottom: 4px;
+}
+
+.contact-card-text {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+.contact-form-wrap {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-gold);
+  border-radius: var(--radius-lg);
+  padding: 36px;
+}
+
