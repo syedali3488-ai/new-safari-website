@@ -84,8 +84,56 @@
        ========================================================================== -->
   <section class="section" id="gallery">
     <div class="container">
+      <!-- Gallery Category Filter Tabs -->
+      <div class="filter-tabs" style="margin-bottom: 30px;">
+        <button class="tab-btn gallery-tab active" data-gcat="all">All Photos</button>
+        <button class="tab-btn gallery-tab" data-gcat="dune">Dune Bashing & 4x4</button>
+        <button class="tab-btn gallery-tab" data-gcat="camp">Bedouin Camp & Shows</button>
+        <button class="tab-btn gallery-tab" data-gcat="thrill">Quad Biking & Thrills</button>
+        <button class="tab-btn gallery-tab" data-gcat="sunset">Sunset & Dawn</button>
+      </div>
+
       <div class="gallery-grid">
-        <div class="gallery-item" onclick="openLightbox('assets/images/hero_desert.jpg', 'Red Dune Bashing in Toyota Land Cruiser 4x4')">
+        <div class="gallery-item" data-gcat="thrill" onclick="openLightbox('assets/images/gal_buggy_action.jpg', 'High Performance Can-Am Dune Buggy Drift on Red Sand Slopes')">
+          <img src="assets/images/gal_buggy_action.jpg" alt="Dune Buggy Action" class="gallery-img" loading="lazy">
+          <div class="gallery-caption">
+            <div class="gallery-title">Can-Am Dune Buggy</div>
+            <div class="gallery-sub">High Speed Red Dune Drift</div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-gcat="dune" onclick="openLightbox('assets/images/gal_landcruiser_drift.jpg', 'Toyota Land Cruiser 4x4 Steep Dune Bashing Drift in Lahbab')">
+          <img src="assets/images/gal_landcruiser_drift.jpg" alt="Land Cruiser Dune Drift" class="gallery-img" loading="lazy">
+          <div class="gallery-caption">
+            <div class="gallery-title">Land Cruiser 4x4 Drift</div>
+            <div class="gallery-sub">Lahbab Red Dune Bashing</div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-gcat="sunset" onclick="openLightbox('assets/images/gal_sunset_heart.jpg', 'Golden Hour Sunset Heart Pose on Desert Dune Peak')">
+          <img src="assets/images/gal_sunset_heart.jpg" alt="Sunset Heart Pose" class="gallery-img" loading="lazy">
+          <div class="gallery-caption">
+            <div class="gallery-title">Golden Hour Sunset</div>
+            <div class="gallery-sub">Panoramic Dune Portrait</div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-gcat="sunset" onclick="openLightbox('assets/images/gal_couple_jump.jpg', 'Fun Sand Jump Photo Session on Untouched Desert Dunes')">
+          <img src="assets/images/gal_couple_jump.jpg" alt="Couple Sand Jump" class="gallery-img" loading="lazy">
+          <div class="gallery-caption">
+            <div class="gallery-title">Fun Dune Memories</div>
+            <div class="gallery-sub">High Dune Sand Jump</div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-gcat="camp" onclick="openLightbox('assets/images/gal_kids_desert.jpg', 'Kids Desert Safari Experience in Traditional Arabian Headscarves')">
+          <img src="assets/images/gal_kids_desert.jpg" alt="Kids Desert Safari" class="gallery-img" loading="lazy">
+          <div class="gallery-caption">
+            <div class="gallery-title">Little Desert Explorers</div>
+            <div class="gallery-sub">Traditional Keffiyeh Style</div>
+          </div>
+        </div>
+        <div class="gallery-item" data-gcat="dune" onclick="openLightbox('assets/images/hero_desert.jpg', 'Red Dune Bashing in Toyota Land Cruiser 4x4')">
           <img src="assets/images/hero_desert.jpg" alt="Dune Bashing" class="gallery-img" loading="lazy">
           <div class="gallery-caption">
             <div class="gallery-title">Red Dune Bashing</div>
@@ -93,7 +141,7 @@
           </div>
         </div>
 
-        <div class="gallery-item" onclick="openLightbox('assets/images/pkg_private_camp.jpg', 'Luxury Bedouin Desert Camp under Night Stars')">
+        <div class="gallery-item" data-gcat="camp" onclick="openLightbox('assets/images/pkg_private_camp.jpg', 'Luxury Bedouin Desert Camp under Night Stars')">
           <img src="assets/images/pkg_private_camp.jpg" alt="VIP Camp" class="gallery-img" loading="lazy">
           <div class="gallery-caption">
             <div class="gallery-title">Bedouin Camp at Night</div>
@@ -101,7 +149,7 @@
           </div>
         </div>
 
-        <div class="gallery-item" onclick="openLightbox('assets/images/pkg_quad.jpg', 'High Performance Quad Biking & Dune Buggy Adventure')">
+        <div class="gallery-item" data-gcat="thrill" onclick="openLightbox('assets/images/pkg_quad.jpg', 'High Performance Quad Biking & Dune Buggy Adventure')">
           <img src="assets/images/pkg_quad.jpg" alt="Quad Biking" class="gallery-img" loading="lazy">
           <div class="gallery-caption">
             <div class="gallery-title">Quad & Buggy Safari</div>
@@ -109,7 +157,7 @@
           </div>
         </div>
 
-        <div class="gallery-item" onclick="openLightbox('assets/images/pkg_camel_sunset.jpg', 'Camel Riding & Golden Hour Sunset View')">
+        <div class="gallery-item" data-gcat="sunset" onclick="openLightbox('assets/images/pkg_camel_sunset.jpg', 'Camel Riding & Golden Hour Sunset View')">
           <img src="assets/images/pkg_camel_sunset.jpg" alt="Camel Sunset" class="gallery-img" loading="lazy">
           <div class="gallery-caption">
             <div class="gallery-title">Camel & Sunset View</div>
@@ -117,7 +165,7 @@
           </div>
         </div>
 
-        <div class="gallery-item" onclick="openLightbox('assets/images/pkg_bbq_show.jpg', 'Tanoura Dance, Fire Show & BBQ Feast')">
+        <div class="gallery-item" data-gcat="camp" onclick="openLightbox('assets/images/pkg_bbq_show.jpg', 'Tanoura Dance, Fire Show & BBQ Feast')">
           <img src="assets/images/pkg_bbq_show.jpg" alt="Live Shows" class="gallery-img" loading="lazy">
           <div class="gallery-caption">
             <div class="gallery-title">Live Stage Entertainment</div>
@@ -125,7 +173,7 @@
           </div>
         </div>
 
-        <div class="gallery-item" onclick="openLightbox('assets/images/gal_sandboarding.jpg', 'Sandboarding thrills on high red dune slopes')">
+        <div class="gallery-item" data-gcat="thrill" onclick="openLightbox('assets/images/gal_sandboarding.jpg', 'Sandboarding thrills on high red dune slopes')">
           <img src="assets/images/gal_sandboarding.jpg" alt="Sandboarding" class="gallery-img" loading="lazy">
           <div class="gallery-caption">
             <div class="gallery-title">Sandboarding Action</div>
@@ -133,7 +181,7 @@
           </div>
         </div>
 
-        <div class="gallery-item" onclick="openLightbox('assets/images/itin_pickup.jpg', 'Door-to-door 4x4 SUV Hotel Pickup in Dubai')">
+        <div class="gallery-item" data-gcat="dune" onclick="openLightbox('assets/images/itin_pickup.jpg', 'Door-to-door 4x4 SUV Hotel Pickup in Dubai')">
           <img src="assets/images/itin_pickup.jpg" alt="4x4 SUV Pickup" class="gallery-img" loading="lazy">
           <div class="gallery-caption">
             <div class="gallery-title">Luxury 4x4 Fleet</div>
@@ -141,7 +189,7 @@
           </div>
         </div>
 
-        <div class="gallery-item" onclick="openLightbox('assets/images/pkg_sunrise.jpg', 'Dawn Desert Sunrise Photography Session')">
+        <div class="gallery-item" data-gcat="sunset" onclick="openLightbox('assets/images/pkg_sunrise.jpg', 'Dawn Desert Sunrise Photography Session')">
           <img src="assets/images/pkg_sunrise.jpg" alt="Sunrise Safari" class="gallery-img" loading="lazy">
           <div class="gallery-caption">
             <div class="gallery-title">Sunrise over Dunes</div>
@@ -149,11 +197,59 @@
           </div>
         </div>
 
-        <div class="gallery-item" onclick="openLightbox('assets/images/itin_welcome.jpg', 'Traditional Arabian Coffee & Henna Welcome')">
+        <div class="gallery-item" data-gcat="camp" onclick="openLightbox('assets/images/itin_welcome.jpg', 'Traditional Arabian Coffee & Henna Welcome')">
           <img src="assets/images/itin_welcome.jpg" alt="Arabic Welcome" class="gallery-img" loading="lazy">
           <div class="gallery-caption">
             <div class="gallery-title">Bedouin Welcome</div>
             <div class="gallery-sub">Arabic Gahwa & Dates</div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-gcat="camp" onclick="openLightbox('assets/images/pkg_vip.jpg', 'VIP Carpeted Table & Reserved Waiter Service')">
+          <img src="assets/images/pkg_vip.jpg" alt="VIP Seating" class="gallery-img" loading="lazy">
+          <div class="gallery-caption">
+            <div class="gallery-title">VIP Table Service</div>
+            <div class="gallery-sub">Reserved Majlis Dining</div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-gcat="camp" onclick="openLightbox('assets/images/pkg_heritage.jpg', 'Royal Falconry Experience & Heritage Camp')">
+          <img src="assets/images/pkg_heritage.jpg" alt="Falconry" class="gallery-img" loading="lazy">
+          <div class="gallery-caption">
+            <div class="gallery-title">Royal Falconry</div>
+            <div class="gallery-sub">Heritage Desert Experience</div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-gcat="dune" onclick="openLightbox('assets/images/pkg_express.jpg', 'Extreme Dune Bashing Thrills across Lehbab Dunes')">
+          <img src="assets/images/pkg_express.jpg" alt="Extreme Dune Bashing" class="gallery-img" loading="lazy">
+          <div class="gallery-caption">
+            <div class="gallery-title">Extreme Dune Bashing</div>
+            <div class="gallery-sub">Steep Red Sand Drift</div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-gcat="camp" onclick="openLightbox('assets/images/pkg_standard.jpg', 'Authentic Arabian BBQ Grill Buffet')">
+          <img src="assets/images/pkg_standard.jpg" alt="BBQ Feast" class="gallery-img" loading="lazy">
+          <div class="gallery-caption">
+            <div class="gallery-title">Live BBQ Grill</div>
+            <div class="gallery-sub">5-Star Arabian Buffet</div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-gcat="camp" onclick="openLightbox('assets/images/vip_camp.jpg', 'Exclusive Private Desert Camp Setup for Groups')">
+          <img src="assets/images/vip_camp.jpg" alt="Private Desert Camp" class="gallery-img" loading="lazy">
+          <div class="gallery-caption">
+            <div class="gallery-title">Private Oasis Camp</div>
+            <div class="gallery-sub">Exclusive Group Setup</div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-gcat="thrill" onclick="openLightbox('assets/images/quad_biking.jpg', 'Open Desert Quad Biking Arena Thrills')">
+          <img src="assets/images/quad_biking.jpg" alt="Quad Biking Arena" class="gallery-img" loading="lazy">
+          <div class="gallery-caption">
+            <div class="gallery-title">Desert Quad Riding</div>
+            <div class="gallery-sub">High Speed Quad Arena</div>
           </div>
         </div>
       </div>

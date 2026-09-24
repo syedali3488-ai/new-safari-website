@@ -586,8 +586,8 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  // Category Tabs
-  const tabBtns = document.querySelectorAll('.tab-btn');
+  // Category Tabs (Packages)
+  const tabBtns = document.querySelectorAll('.tab-btn:not(.gallery-tab)');
   tabBtns.forEach(btn => {
     btn.addEventListener('click', (e) => {
       tabBtns.forEach(b => b.classList.remove('active'));
@@ -595,6 +595,26 @@ document.addEventListener('DOMContentLoaded', () => {
       renderPackages(e.target.dataset.category);
     });
   });
+
+  // Gallery Filter Tabs
+  const galTabBtns = document.querySelectorAll('.gallery-tab');
+  const galItems = document.querySelectorAll('.gallery-item');
+  if (galTabBtns.length > 0 && galItems.length > 0) {
+    galTabBtns.forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        galTabBtns.forEach(b => b.classList.remove('active'));
+        e.target.classList.add('active');
+        const cat = e.target.dataset.gcat;
+        galItems.forEach(item => {
+          if (cat === 'all' || item.dataset.gcat === cat) {
+            item.style.display = 'block';
+          } else {
+            item.style.display = 'none';
+          }
+        });
+      });
+    });
+  }
 
   // Currency Dropdown Selector
   const currencyBtn = document.getElementById('currencyBtn');
