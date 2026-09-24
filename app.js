@@ -26,7 +26,7 @@ function formatPrice(aedPrice) {
 }
 
 // --------------------------------------------------------------------------
-// 2. PACKAGES DATASET (Sorted Ascending by Price)
+// 2. PACKAGES DATASET (Enriched Inclusions & Sorted Ascending by Price)
 // --------------------------------------------------------------------------
 const PACKAGES = [
   {
@@ -41,10 +41,16 @@ const PACKAGES = [
     duration: 'Camp Access (6:00 PM - 9:00 PM)',
     pickup: 'Self Drive to Camp Location',
     inclusions: [
-      'Camp entrance pass for self-drive guests',
-      'BBQ Buffet Dinner (Veg & Non-Veg)',
-      'Live Tanoura & Fire Show performances',
-      'Unlimited soft drinks & tea'
+      'Direct entry pass to desert camp in your own vehicle (Sedan or 4x4 accessible)',
+      'Free designated desert camp parking area with security',
+      'Traditional Arabic welcome with dates & hot Gahwa (Arabic coffee)',
+      '5-Star Bedouin BBQ Buffet Dinner (Separate Veg & Non-Veg sections)',
+      'Unlimited soft drinks, chilled mineral water, tea & instant coffee',
+      'Live Stage Performances: Tanoura Dance & Thrilling Fire Show',
+      'Open access to central carpeted seating area & Bedouin lounge',
+      'Traditional Henna hand tattoo painting station',
+      'Sunset viewing point access over the desert dunes',
+      'On-site camp washroom & prayer room facilities'
     ]
   },
   {
@@ -59,10 +65,17 @@ const PACKAGES = [
     duration: 'Camp Access (5:30 PM - 9:30 PM)',
     pickup: 'Self Drive to Camp Location',
     inclusions: [
-      'Priority Majlis cushion seating inside camp',
-      'Full 5-Star Live BBQ Buffet',
-      'Camel ride & Henna painting inside camp',
-      'All 3 Live Entertainment Shows'
+      'Direct entry pass to premium desert camp in your own vehicle',
+      'Reserved designated parking close to main camp entrance',
+      'Priority Majlis cushion seating section with prime stage views',
+      'Welcome Arabic Gahwa coffee, dates & fresh mint lemonade',
+      'Full 5-Star Live Grill BBQ Buffet (Kebabs, Chicken Tikka, Hummus, Biryani & Sweets)',
+      'Unlimited soft drinks, chilled mineral water, Arabic tea & coffee',
+      'Live Stage Shows: Tanoura Dance, Belly Dance & Fire Show',
+      'Complimentary short Camel Ride session inside camp perimeter',
+      'Complimentary Henna tattoo painting for adults & children',
+      'Traditional Arabic costume photography station (Kandura & Abaya)',
+      'Open access to desert sandboarding slopes near camp'
     ]
   },
   {
@@ -77,10 +90,16 @@ const PACKAGES = [
     duration: 'Camp Access (5:30 PM - 9:30 PM)',
     pickup: 'Self Drive to Camp Location',
     inclusions: [
-      'VIP Reserved Table & dedicated waiter service',
-      'Gourmet Live Grill & Table Buffet Service',
-      'Falcon photo experience',
-      'All Live Shows with front-row view'
+      'Direct VIP entry pass with reserved priority parking',
+      'Reserved VIP Elevated Carpeted Table with dedicated personal waiter service',
+      'Exclusive VIP Live Grill & Gourmet Buffet served directly at your table',
+      'Royal Falconry photo opportunity (Hold live falcon with traditional glove)',
+      'Unlimited premium mocktails, soft drinks, Arabic tea & fresh juices',
+      'Priority front-row table seating for all 3 Live Stage Shows (Tanoura, Fire, Belly Dance)',
+      'Dedicated VIP Shisha table service (Multiple flavors available)',
+      'Unlimited Camel Rides & Henna body art',
+      'Traditional Arabic dress photo session',
+      'Luxury carpeted Majlis lounge access with private washroom facilities'
     ]
   },
   {
@@ -95,12 +114,16 @@ const PACKAGES = [
     duration: '5.5 Hours (3:30 PM - 9:00 PM)',
     pickup: 'Sharing 4x4 SUV Pickup',
     inclusions: [
-      '15–20 Mins Dune Bashing experience',
-      'Sandboarding & Sunset photography point',
-      'Standard Bedouin camp entry & carpet seating',
-      'Arabic BBQ Buffet (Vegetarian & Non-Veg)',
-      'Live Tanoura & Belly Dance performances',
-      'Unlimited mineral water & soft drinks'
+      'Door-to-door hotel pickup & drop-off in a climate-controlled 4x4 SUV',
+      '15–20 Minutes Lahbab Red Dune Bashing experience with certified driver',
+      'Sandboarding thrill session down high red dune crests',
+      'Golden hour desert sunset photography stop',
+      'Bedouin camp welcome with dates & hot Arabic tea/coffee',
+      'Delicious 5-Star BBQ Buffet Dinner (Halal Veg & Non-Veg options)',
+      'Unlimited mineral water & soft drinks throughout the evening',
+      'Live Stage Entertainment: Tanoura Dancer & Belly Dance show',
+      'Traditional Henna hand painting & camel ride experience',
+      'Fully insured Toyota Land Cruiser 4x4 with safety roll bars'
     ]
   },
   {
@@ -115,14 +138,18 @@ const PACKAGES = [
     duration: '6 Hours (3:00 PM - 9:30 PM)',
     pickup: 'Free 4x4 SUV Hotel Pickup & Drop',
     inclusions: [
-      '25–30 Mins Lehbab Red Dune Bashing (4x4 Land Cruiser)',
-      'Sandboarding from high dune crests',
-      'Golden hour sunset photo stop',
-      'Bedouin camp welcome with Arabic coffee & dates',
-      'Camel riding & traditional Henna tattoo painting',
-      '5-Star Live BBQ Buffet (Veg & Non-Veg options)',
-      '3 Live Shows: Tanoura, Fire Performance & Belly Dance',
-      'Unlimited soft drinks, mineral water, tea & coffee'
+      'Door-to-door hotel & residence pickup/drop-off in Toyota Land Cruiser 4x4',
+      '25–30 Minutes Thrilling Lehbab High Red Dune Bashing',
+      'Sandboarding equipment & guided sand surfing on 50ft red dunes',
+      'Panoramic 360° golden hour sunset photo stop on top of dune ridge',
+      'Bedouin camp welcome with Arabic Gahwa, dates & fresh welcome drinks',
+      'Priority Majlis cushion seating with optimal stage view',
+      '5-Star Live Grill BBQ Buffet Feast (Grilled Kebabs, Shish Taouk, Biryani, Salads & Arabian Sweets)',
+      'Unlimited soft drinks, mineral water, Arabic coffee & Karak tea',
+      'Full 3 Live Stage Performances: Tanoura Spinner, Fire Breath Show & Belly Dance',
+      'Unlimited Camel Rides & traditional Henna tattoo art',
+      'Arabic costume photography session & souvenir photo point',
+      'Comprehensive passenger insurance & DET certified professional driver'
     ]
   },
   {
@@ -137,13 +164,17 @@ const PACKAGES = [
     duration: '6 Hours (3:00 PM - 9:30 PM)',
     pickup: 'VIP 4x4 SUV Hotel Pickup',
     inclusions: [
-      '35+ Mins Extended Thrill Dune Bashing',
-      'Reserved VIP Carpeted Table with waiter service',
-      'Exclusive Gourmet BBQ Buffet & Live Seafood upgrade',
-      'Falconry photography experience & traditional costume',
-      'Camel riding & unlimited Henna design',
-      'Priority front-row stage view for all 3 Live Shows',
-      'Unlimited premium mocktails, soft drinks & Arabian tea'
+      'VIP Door-to-Door Pickup in Luxury 4x4 SUV (Toyota Land Cruiser / Nissan Patrol)',
+      '35+ Minutes Extended Thrill Red Dune Bashing across deep desert routes',
+      'Reserved VIP Elevated Carpeted Table with dedicated personal waiter',
+      'Gourmet 5-Star Live Grill & Seafood Upgrade served directly to your VIP table',
+      'Royal Falconry experience (Photos holding live trained desert falcon)',
+      'Unlimited premium mocktails, fresh juices, soft drinks, tea & coffee',
+      'Dedicated VIP Shisha table service with customized tobacco flavors',
+      'Priority front-row stage view for all Live Shows (Tanoura, Fire, Belly Dance)',
+      'Extended Camel Rides & unlimited elaborate Henna tattoo art',
+      'Arabic traditional royal costume photo session',
+      'Luxury private VIP washrooms & air-conditioned lounge access'
     ]
   },
   {
@@ -158,12 +189,17 @@ const PACKAGES = [
     duration: '6.5 Hours (3:00 PM - 9:30 PM)',
     pickup: 'Free Hotel Pickup Included',
     inclusions: [
-      '30 Minutes High-Power 350cc Quad Bike session',
-      'Safety helmet & goggles provided with guide',
-      'Red Dune Land Cruiser bashing & sandboarding',
-      'Camel ride & Bedouin camp entry',
-      'Full 5-Star BBQ Dinner & Live Show performances',
-      'Unlimited drinks & refreshments'
+      'Door-to-door hotel pickup & drop-off in 4x4 Toyota Land Cruiser',
+      '30 Minutes High-Power 350cc Quad Biking session in dedicated desert arena',
+      'Full safety gear provided: Helmets, goggles, safety briefs & professional instructor',
+      '25–30 Minutes Lahbab Red Dune Bashing in 4x4 Land Cruiser',
+      'Sandboarding down steep sand dunes with photo assistance',
+      'Sunset photo stop at high red dune vantage point',
+      'Bedouin camp entry with Arabic coffee, tea & dates welcome',
+      '5-Star BBQ Buffet Dinner with live grill counters',
+      'Unlimited soft drinks, mineral water & tea',
+      '3 Live Shows: Tanoura Dance, Fire Performance & Belly Dance',
+      'Camel ride & Henna tattoo painting experience'
     ]
   },
   {
@@ -178,10 +214,16 @@ const PACKAGES = [
     duration: '3.5 Hours (5:00 AM - 8:30 AM)',
     pickup: 'Private 4x4 SUV Pick Up',
     inclusions: [
-      'Early 5:00 AM hotel pickup to catch sunrise',
-      'Spectacular desert dawn photo opportunities',
-      'Morning dune bashing & sandboarding',
-      'Bedouin style continental light breakfast & coffee'
+      'Early morning 5:00 AM hotel pickup in Private 4x4 Toyota Land Cruiser',
+      'Scenic sunrise viewing stop as dawn breaks over untouched desert dunes',
+      'Professional sunrise photo shoot assistance on high dune crests',
+      '25–30 Minutes Crisp morning red dune bashing session',
+      'Sandboarding on untouched, pristine sand slopes',
+      'Visit to authentic camel farm for camel feeding & photo opportunities',
+      'Morning camel riding experience',
+      'Bedouin-style continental light breakfast (Fresh pastries, fruits, juices, tea & coffee)',
+      'Chilled bottled mineral water & fresh juices throughout',
+      'Private vehicle reserved exclusively for your family/group (up to 6 guests)'
     ]
   },
   {
@@ -196,11 +238,14 @@ const PACKAGES = [
     duration: '3 Hours (7:00 AM - 10:00 AM)',
     pickup: 'Private 4x4 SUV Pickup',
     inclusions: [
-      'Cool early morning dune bashing session',
-      'Sandboarding down pristine untouched slopes',
-      'Camel farm visit & camel riding',
-      'Fresh bottled water & juice refreshments',
-      'Back at your hotel in time for brunch'
+      'Dedicated Private 4x4 Toyota Land Cruiser exclusively for your group (Up to 6 Pax)',
+      'Door-to-door hotel pickup & drop-off (Flexible pickup time: 7:00 AM - 9:00 AM)',
+      '30–35 Minutes Extreme Morning Red Dune Bashing with certified desert master',
+      'High-dune sandboarding & sand surfing action',
+      'Stop at high dune summit for 360° panoramic desert photography',
+      'Visit to traditional desert camel farm & camel ride experience',
+      'Unlimited chilled bottled water, juices, and soft drinks',
+      'Return drop-off back to your hotel in time for lunch/brunch'
     ]
   },
   {
@@ -215,12 +260,14 @@ const PACKAGES = [
     duration: '3.5 Hours (3:30 PM - 7:00 PM)',
     pickup: 'Private 4x4 SUV (Up to 6 Passengers)',
     inclusions: [
-      'Private 4x4 Land Cruiser dedicated to your group',
-      '30 Mins Extreme Red Dune Bashing',
-      'Sandboarding at panoramic dune summit',
-      'Sunset photo session with family/friends',
-      'Chilled mineral water & soft drinks',
-      'Direct return to hotel before evening'
+      'Private 4x4 Toyota Land Cruiser reserved exclusively for your group (Up to 6 Guests)',
+      'Hotel pickup at 3:30 PM & direct express return by 7:00 PM',
+      '35 Minutes Intense Red Dune Bashing across Lehbab’s highest dunes',
+      'Sunset viewing & dedicated photo session at golden hour dune peak',
+      'Sandboarding down 60ft sand slopes with photo assistance',
+      'Desert wildlife spotting opportunities (Arabian Gazelles & Falcons)',
+      'Refreshments on board: Chilled mineral water, juices & soft drinks',
+      'Ideal for travelers short on time or preferring to skip evening camp shows'
     ]
   },
   {
@@ -235,12 +282,16 @@ const PACKAGES = [
     duration: '6.5 Hours (3:00 PM - 9:30 PM)',
     pickup: 'Private Luxury 4x4 SUV Pickup',
     inclusions: [
-      'Private Vintage / Luxury 4x4 Desert Transport',
-      'Exclusive Bedouin Camp Pavilion access',
-      'Interactive Arabic Cooking & Bread Making',
-      'Royal Falconry show & private portrait photo',
-      'Gourmet 7-Course Arabian Grill Dinner',
-      'Private Shisha lounge service'
+      'Door-to-door hotel transport in Private Luxury 4x4 (Land Cruiser / Nissan Patrol)',
+      'Private Heritage Desert Reserve access with vintage/luxury 4x4 dune drive',
+      'Exclusive Private Bedouin Pavilion setup with dedicated Majlis seating',
+      'Interactive Arabic Cooking Demonstration (Fresh Saj bread making & Luqaimat)',
+      'Royal Falconry Show & personal photo shoot with trained hunting falcons',
+      'Gourmet 7-Course Royal Arabian Grill Feast (Lamb chops, prawns, kebabs, mezze)',
+      'Private Shisha Butler service at your pavilion',
+      'Live Private Cultural Performances (Traditional Oud musician & Tanoura artist)',
+      'Sunset camel caravan trek with sunset champagne/mocktail toast',
+      'Premium dates, Arabic Gahwa, unlimited beverages & luxury desserts'
     ]
   },
   {
@@ -255,11 +306,15 @@ const PACKAGES = [
     duration: 'Custom Duration',
     pickup: 'Private Luxury Fleet Transport',
     inclusions: [
-      'Entire desert camp venue reserved for your group',
-      'Customized 5-Star Catering Menu & Chef',
-      'Dedicated DJ, Sound System & Private Dancers',
-      'Private dune bashing & quad bike track',
-      'Ideal for corporate retreats, birthdays & anniversaries'
+      'Exclusive reservation of entire private desert camp venue for your event/group',
+      'Luxury private fleet 4x4 transport for all guests (up to 15 guests included)',
+      'Private red dune bashing convoy & dedicated open quad bike arena',
+      'Customized 5-Star Gourmet Catering (International BBQ, Seafood, Vegan & Live Cooking)',
+      'Dedicated DJ, Sound System, Stage Lighting & Live Performers (Fire, Tanoura, Belly Dancers)',
+      'Private Shisha Lounge with personal servers & flavor station',
+      'Unlimited camel rides, falconry photo station, sandboarding & Henna artists',
+      'Customized branding, bonfire setup, stargazing telescope & luxury pavilion seating',
+      'Dedicated event coordinator & private security team on site'
     ]
   }
 ];
@@ -297,7 +352,7 @@ function renderPackages(category = 'all') {
         </div>
 
         <ul class="package-inclusions">
-          ${pkg.inclusions.slice(0, 4).map(inc => `
+          ${pkg.inclusions.slice(0, 6).map(inc => `
             <li class="package-inclusion-item">
               <span class="check-icon">✓</span>
               <span>${inc}</span>
