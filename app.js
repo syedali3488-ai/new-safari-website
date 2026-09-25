@@ -203,6 +203,32 @@ const PACKAGES = [
     ]
   },
   {
+    id: 'birthday-celebration',
+    title: 'Birthday Celebration Desert Safari',
+    category: 'birthday',
+    badge: '🎉 Special Event',
+    featured: false,
+    priceAED: 349,
+    img: 'assets/images/vip_camp.jpg',
+    subtitle: 'Customized Birthday Camp Setup, Fresh Cake & VIP Service',
+    duration: '6 Hours (3:00 PM - 9:30 PM)',
+    pickup: 'Free 4x4 SUV Hotel Pickup & Drop',
+    inclusions: [
+      'Special customized Birthday decor & balloon setup at your reserved camp space',
+      'Complimentary fresh Birthday Cake (1kg) with sparkler candle ceremony',
+      'Personalized Birthday shout-out & song announcement on main stage',
+      'Door-to-door hotel pickup & drop-off in climate-controlled Toyota Land Cruiser 4x4',
+      '25–30 Minutes Thrilling Lehbab High Red Dune Bashing',
+      'Sandboarding gear & dune surfing action on steep red dune slopes',
+      'Golden hour sunset photo stop on dune crest with family & friends',
+      'Reserved VIP Table seating with dedicated personal waiter service',
+      '5-Star Live Grill BBQ Buffet (Grilled Kebabs, Chicken Tikka, Seafood & Sweets)',
+      'Unlimited soft drinks, chilled mineral water, mocktails & Arabic tea/coffee',
+      'Full 3 Live Stage Performances: Tanoura Spinner, Fire Show & Belly Dance',
+      'Royal Falconry photo experience, camel rides & traditional Henna tattoo art'
+    ]
+  },
+  {
     id: 'sunrise-safari',
     title: 'Sunrise Private Desert Safari',
     category: 'morning',
