@@ -240,16 +240,16 @@ const PACKAGES = [
     duration: '3.5 Hours (5:00 AM - 8:30 AM)',
     pickup: 'Private 4x4 SUV Pick Up',
     inclusions: [
-      'Early morning 5:00 AM hotel pickup in Private 4x4 Toyota Land Cruiser',
-      'Scenic sunrise viewing stop as dawn breaks over untouched desert dunes',
-      'Professional sunrise photo shoot assistance on high dune crests',
-      '25–30 Minutes Crisp morning red dune bashing session',
-      'Sandboarding on untouched, pristine sand slopes',
-      'Visit to authentic camel farm for camel feeding & photo opportunities',
-      'Morning camel riding experience',
-      'Bedouin-style continental light breakfast (Fresh pastries, fruits, juices, tea & coffee)',
-      'Chilled bottled mineral water & fresh juices throughout',
-      'Private vehicle reserved exclusively for your family/group (up to 6 guests)'
+      'Private Pickup & Drop-off',
+      'Early Pickup',
+      'Sunrise Photography',
+      '4×4 Dune Bashing',
+      'Sunrise Experience',
+      'Camel Ride',
+      'Sandboarding',
+      'Desert Photography',
+      'Scenic Desert Views',
+      'Mineral Water & Soft Drinks'
     ]
   },
   {
@@ -264,14 +264,14 @@ const PACKAGES = [
     duration: '3 Hours (7:00 AM - 10:00 AM)',
     pickup: 'Private 4x4 SUV Pickup',
     inclusions: [
-      'Dedicated Private 4x4 Toyota Land Cruiser exclusively for your group (Up to 6 Pax)',
-      'Door-to-door hotel pickup & drop-off (Flexible pickup time: 7:00 AM - 9:00 AM)',
-      '30–35 Minutes Extreme Morning Red Dune Bashing with certified desert master',
-      'High-dune sandboarding & sand surfing action',
-      'Stop at high dune summit for 360° panoramic desert photography',
-      'Visit to traditional desert camel farm & camel ride experience',
-      'Unlimited chilled bottled water, juices, and soft drinks',
-      'Return drop-off back to your hotel in time for lunch/brunch'
+      'Private Pickup & Drop-off',
+      '4×4 Dune Bashing',
+      'Sunrise Experience',
+      'Camel Ride',
+      'Sandboarding',
+      'Desert Photography',
+      'Scenic Desert Views',
+      'Mineral Water & Soft Drinks'
     ]
   },
   {
@@ -378,7 +378,7 @@ function renderPackages(category = 'all') {
         </div>
 
         <ul class="package-inclusions">
-          ${pkg.inclusions.slice(0, 6).map(inc => `
+          ${pkg.inclusions.map(inc => `
             <li class="package-inclusion-item">
               <span class="check-icon">✓</span>
               <span>${inc}</span>
