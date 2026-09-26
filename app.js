@@ -226,18 +226,24 @@ const PACKAGES = [
     duration: '6 Hours (3:00 PM - 9:30 PM)',
     pickup: 'Free 4x4 SUV Hotel Pickup & Drop',
     inclusions: [
-      'Special customized Birthday decor & balloon setup at your reserved camp space',
-      'Complimentary fresh Birthday Cake (1kg) with sparkler candle ceremony',
-      'Personalized Birthday shout-out & song announcement on main stage',
-      'Door-to-door hotel pickup & drop-off in climate-controlled Toyota Land Cruiser 4x4',
-      '25–30 Minutes Thrilling Lehbab High Red Dune Bashing',
-      'Sandboarding gear & dune surfing action on steep red dune slopes',
-      'Golden hour sunset photo stop on dune crest with family & friends',
-      'Reserved VIP Table seating with dedicated personal waiter service',
-      '5-Star Live Grill BBQ Buffet (Grilled Kebabs, Chicken Tikka, Seafood & Sweets)',
-      'Unlimited soft drinks, chilled mineral water, mocktails & Arabic tea/coffee',
-      'Full 3 Live Stage Performances: Tanoura Spinner, Fire Show & Belly Dance',
-      'Royal Falconry photo experience, camel rides & traditional Henna tattoo art'
+      'Desert Pickup & Drop-off',
+      '4×4 Dune Bashing',
+      'Sunset Experience',
+      'Camel Ride',
+      'Sandboarding',
+      'Fresh Birthday Cake',
+      'Celebration Balloons',
+      'Desert Photography',
+      'Traditional Desert Camp',
+      'Traditional Costume Photography',
+      'Henna for Ladies & Kids',
+      'Shared Sheesha Area',
+      'BBQ Dinner — Vegetarian & Non-Vegetarian',
+      'Unlimited Soft Drinks & Mineral Water',
+      'Tea & Coffee',
+      'Tanoura Show',
+      'Belly Dance Show',
+      'Fire Show'
     ]
   },
   {
@@ -298,14 +304,12 @@ const PACKAGES = [
     duration: '3.5 Hours (3:30 PM - 7:00 PM)',
     pickup: 'Private 4x4 SUV (Up to 6 Passengers)',
     inclusions: [
-      'Private 4x4 Toyota Land Cruiser reserved exclusively for your group (Up to 6 Guests)',
-      'Hotel pickup at 3:30 PM & direct express return by 7:00 PM',
-      '35 Minutes Intense Red Dune Bashing across Lehbab’s highest dunes',
-      'Sunset viewing & dedicated photo session at golden hour dune peak',
-      'Sandboarding down 60ft sand slopes with photo assistance',
-      'Desert wildlife spotting opportunities (Arabian Gazelles & Falcons)',
-      'Refreshments on board: Chilled mineral water, juices & soft drinks',
-      'Ideal for travelers short on time or preferring to skip evening camp shows'
+      'Sunset Experience',
+      'Camel Ride',
+      'Sandboarding',
+      'Desert Photography',
+      '4x4 Dunebashing',
+      'Hotel pickup at 3:30 PM & express return by 7:00 PM'
     ]
   },
   {
