@@ -260,6 +260,7 @@ const PACKAGES = [
     badge: 'Golden Hour',
     featured: false,
     priceAED: 419,
+    priceUnit: '',
     img: 'assets/images/pkg_sunrise.jpg',
     subtitle: 'Watch Sunrise Over Desert Dunes & Light Breakfast',
     duration: '3.5 Hours (5:00 AM - 8:30 AM)',
@@ -284,6 +285,7 @@ const PACKAGES = [
     badge: 'Morning Fresh',
     featured: false,
     priceAED: 449,
+    priceUnit: '',
     img: 'assets/images/pkg_camel_sunset.jpg',
     subtitle: 'Crisp Morning Sand Dunes & Sand Surfing',
     duration: '3 Hours (7:00 AM - 10:00 AM)',
@@ -306,6 +308,7 @@ const PACKAGES = [
     badge: 'Express Tour',
     featured: false,
     priceAED: 479,
+    priceUnit: '',
     img: 'assets/images/pkg_express.jpg',
     subtitle: 'Focused Dune Bashing & Sunset without Camp Stay',
     duration: '3.5 Hours (3:30 PM - 7:00 PM)',
@@ -326,6 +329,7 @@ const PACKAGES = [
     badge: 'Luxury Heritage',
     featured: false,
     priceAED: 999,
+    priceUnit: '',
     img: 'assets/images/pkg_heritage.jpg',
     subtitle: 'Heritage Bedouin Experience in Private Reserve',
     duration: '6.5 Hours (3:00 PM - 9:30 PM)',
@@ -350,6 +354,7 @@ const PACKAGES = [
     badge: 'Exclusive Oasis',
     featured: false,
     priceAED: 2599,
+    priceUnit: '',
     img: 'assets/images/pkg_private_camp.jpg',
     subtitle: 'Entire Private Desert Camp for Groups & Events',
     duration: 'Custom Duration',
@@ -397,7 +402,7 @@ function renderPackages(category = 'all') {
         <div class="package-price-box">
           <span class="price-curr">${CURRENCIES[currentCurrency].symbol}</span>
           <span class="price-amount">${Math.round(pkg.priceAED * CURRENCIES[currentCurrency].rate).toLocaleString()}</span>
-          <span class="price-label">${pkg.priceUnit || '/ person'}</span>
+          <span class="price-label">${pkg.priceUnit !== undefined ? pkg.priceUnit : '/ person'}</span>
         </div>
 
         <ul class="package-inclusions">
@@ -443,7 +448,7 @@ function openPackageModal(pkgId) {
     <div class="package-price-box" style="margin-bottom: 24px;">
       <span class="price-curr">${CURRENCIES[currentCurrency].symbol}</span>
       <span class="price-amount">${Math.round(pkg.priceAED * CURRENCIES[currentCurrency].rate).toLocaleString()}</span>
-      <span class="price-label">${pkg.priceUnit ? pkg.priceUnit : `per guest (${pkg.pickup})`}</span>
+      <span class="price-label">${pkg.priceUnit !== undefined ? pkg.priceUnit : `per guest (${pkg.pickup})`}</span>
     </div>
 
     <h4 style="font-family: var(--font-heading); color: var(--gold-light); margin-bottom: 12px;">Complete Tour Inclusions:</h4>
