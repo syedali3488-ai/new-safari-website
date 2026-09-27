@@ -201,17 +201,23 @@ const PACKAGES = [
     duration: '6.5 Hours (3:00 PM - 9:30 PM)',
     pickup: 'Free Hotel Pickup Included',
     inclusions: [
-      'Door-to-door hotel pickup & drop-off in 4x4 Toyota Land Cruiser',
-      '30 Minutes High-Power 350cc Quad Biking session in dedicated desert arena',
-      'Full safety gear provided: Helmets, goggles, safety briefs & professional instructor',
-      '25–30 Minutes Lahbab Red Dune Bashing in 4x4 Land Cruiser',
-      'Sandboarding down steep sand dunes with photo assistance',
-      'Sunset photo stop at high red dune vantage point',
-      'Bedouin camp entry with Arabic coffee, tea & dates welcome',
-      '5-Star BBQ Buffet Dinner with live grill counters',
-      'Unlimited soft drinks, mineral water & tea',
-      '3 Live Shows: Tanoura Dance, Fire Performance & Belly Dance',
-      'Camel ride & Henna tattoo painting experience'
+      'Quad Biking Experience',
+      'Desert Pickup & Drop-off',
+      '4×4 Dune Bashing',
+      'Sunset Experience',
+      'Camel Ride',
+      'Sandboarding',
+      'Desert Photography',
+      'Traditional Desert Camp',
+      'Traditional Costume Photography',
+      'Henna for Ladies & Kids',
+      'Shared Sheesha Area',
+      'BBQ Dinner — Vegetarian & Non-Vegetarian',
+      'Unlimited Soft Drinks & Mineral Water',
+      'Tea & Coffee',
+      'Tanoura Show',
+      'Belly Dance Show',
+      'Fire Show'
     ]
   },
   {
@@ -220,7 +226,8 @@ const PACKAGES = [
     category: 'birthday',
     badge: '🎉 Special Event',
     featured: false,
-    priceAED: 349,
+    priceAED: 699,
+    priceUnit: '/ package (2 guests)',
     img: 'assets/images/vip_camp.jpg',
     subtitle: 'Customized Birthday Camp Setup, Fresh Cake & VIP Service',
     duration: '6 Hours (3:00 PM - 9:30 PM)',
@@ -390,7 +397,7 @@ function renderPackages(category = 'all') {
         <div class="package-price-box">
           <span class="price-curr">${CURRENCIES[currentCurrency].symbol}</span>
           <span class="price-amount">${Math.round(pkg.priceAED * CURRENCIES[currentCurrency].rate).toLocaleString()}</span>
-          <span class="price-label">/ person</span>
+          <span class="price-label">${pkg.priceUnit || '/ person'}</span>
         </div>
 
         <ul class="package-inclusions">
@@ -436,7 +443,7 @@ function openPackageModal(pkgId) {
     <div class="package-price-box" style="margin-bottom: 24px;">
       <span class="price-curr">${CURRENCIES[currentCurrency].symbol}</span>
       <span class="price-amount">${Math.round(pkg.priceAED * CURRENCIES[currentCurrency].rate).toLocaleString()}</span>
-      <span class="price-label">per guest (${pkg.pickup})</span>
+      <span class="price-label">${pkg.priceUnit ? pkg.priceUnit : `per guest (${pkg.pickup})`}</span>
     </div>
 
     <h4 style="font-family: var(--font-heading); color: var(--gold-light); margin-bottom: 12px;">Complete Tour Inclusions:</h4>
